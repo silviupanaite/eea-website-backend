@@ -1,0 +1,11 @@
+bin/
+constraints-mxdev.txt
+etc/
+include/
+inituser
+lib/
+lib64
+pyvenv.cfg
+requirements-mxdev.txt
+sources/
+var/

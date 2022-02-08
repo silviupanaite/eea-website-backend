@@ -26,6 +26,9 @@ Trainings on how to create your own website using Plone 6 is available as part o
 
     apt update
     apt install python3-venv python3.8-dev python3.8-venv git make gcc
+
+Optionally set default `python3`:
+
     update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 
 ### Mac OS
@@ -38,7 +41,7 @@ In order to develop Plone 6 backend add-ons run:
 
     git clone https://github.com/eea/eea-website-backend.git
     cd eea-website-backend
-    make
+    make -e PYTHON=python3.8
     make start
 
 ## Develop

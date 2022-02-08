@@ -42,8 +42,10 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 
-PLONE_VERSION=`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
-PIP_PARAMS=		#`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
+PLONE_VERSION=6.0.0a3
+#`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
+PIP_PARAMS=
+#`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
 
 # Top-level targets
 .PHONY: all
@@ -60,7 +62,7 @@ develop:		## Develop source.ini add-ons using mxdev
 
 .PHONY: install
 install:		## Install Plone and develop add-ons
-	bin/pip install Plone plone.volto -c https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt $(PIP_PARAMS)
+	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
 	bin/pip install -r requirements-mxdev.txt $(PIP_PARAMS)
 	bin/mkwsgiinstance -d . -u admin:admin
 

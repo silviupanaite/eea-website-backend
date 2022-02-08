@@ -51,7 +51,7 @@ all: bootstrap develop install
 
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
-	python -m venv .
+	python3 -m venv .
 	bin/pip install mxdev
 
 .PHONY: develop

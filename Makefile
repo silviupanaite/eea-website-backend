@@ -50,22 +50,22 @@ PYTHON?=python3
 
 # Top-level targets
 .PHONY: all
-all: bootstrap develop install
+all: bootstrap install develop
 
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
 	bin/pip install --upgrade pip mxdev pylint
 
-.PHONY: develop
-develop:		## Develop source.ini add-ons using mxdev
-	bin/mxdev -c sources.ini
-
 .PHONY: install
 install:		## Install Plone and develop add-ons
 	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
-	bin/pip install -r requirements-mxdev.txt $(PIP_PARAMS)
 	bin/mkwsgiinstance -d . -u admin:admin
+
+.PHONY: develop
+develop:		## Develop source.ini add-ons using mxdev
+	bin/mxdev -c sources.ini
+	bin/pip install -r requirements-mxdev.txt $(PIP_PARAMS)
 
 .PHONY: start
 start:			## Start Plone backend

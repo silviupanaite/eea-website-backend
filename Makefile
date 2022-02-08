@@ -43,7 +43,7 @@ endif
 # SETTINGS AND VARIABLE
 
 PLONE_VERSION=`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
-PIP_PARAMS=`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
+PIP_PARAMS=		#`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
 
 # Top-level targets
 .PHONY: all
@@ -52,7 +52,7 @@ all: bootstrap develop install
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	python3 -m venv .
-	bin/pip install mxdev
+	bin/pip install --upgrade pip mxdev
 
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev

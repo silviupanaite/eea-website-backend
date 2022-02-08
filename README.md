@@ -13,7 +13,7 @@ See [Plone 6 frontend for EEA Main website](https://github.com/eea/eea-website-f
 
 See Plone backend at http://localhost:8080/Plone
 
-## How to contribute
+## Develop
 
 See [DEVELOP.md](https://github.com/eea/eea-website-backend/blob/master/DEVELOP.md).
 

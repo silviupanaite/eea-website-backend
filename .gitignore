@@ -1,7 +1,6 @@
 .vscode/
 bin/
 constraints-mxdev.txt
-etc/
 include/
 inituser
 lib/

@@ -41,7 +41,12 @@ In order to develop Plone 6 backend add-ons run:
 
     git clone https://github.com/eea/eea-website-backend.git
     cd eea-website-backend/develop
-    make -e PYTHON=python3.8
+    make
+    make start
+
+To use other **Python** version run make with `-e` parameter:
+
+    make -e PYTHON=python3.9
     make start
 
 ## Develop

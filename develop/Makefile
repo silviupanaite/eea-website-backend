@@ -46,7 +46,7 @@ PLONE_VERSION=6.0.0a3
 #`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
 PIP_PARAMS=
 #`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
-PYTHON?=python3
+PYTHON?=python3.8
 
 # Top-level targets
 .PHONY: all
@@ -61,6 +61,7 @@ bootstrap:		## Bootstrap python environment
 install:		## Install Plone and develop add-ons
 	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
 	bin/mkwsgiinstance -d . -u admin:admin
+	mkdir -p var/blobstorage var/filestorage
 
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev

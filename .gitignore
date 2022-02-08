@@ -1,3 +1,4 @@
+.vscode/
 bin/
 constraints-mxdev.txt
 etc/
@@ -7,5 +8,6 @@ lib/
 lib64
 pyvenv.cfg
 requirements-mxdev.txt
+share/
 sources/
 var/

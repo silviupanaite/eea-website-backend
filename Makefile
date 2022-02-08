@@ -54,7 +54,7 @@ all: bootstrap develop install
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	python3 -m venv .
-	bin/pip install --upgrade pip mxdev
+	bin/pip install --upgrade pip mxdev pylint
 
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev

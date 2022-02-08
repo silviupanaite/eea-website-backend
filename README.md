@@ -15,7 +15,7 @@ See Plone backend at http://localhost:8080/Plone
 
 ## Develop
 
-See [DEVELOP.md](https://github.com/eea/eea-website-backend/blob/master/DEVELOP.md).
+See [develop](https://github.com/eea/eea-website-backend/develop)
 
 ## Release
 

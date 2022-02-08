@@ -40,7 +40,7 @@ Optionally set default `python3`:
 In order to develop Plone 6 backend add-ons run:
 
     git clone https://github.com/eea/eea-website-backend.git
-    cd eea-website-backend
+    cd eea-website-backend/develop
     make -e PYTHON=python3.8
     make start
 
@@ -50,13 +50,13 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com/) Editor
 * Extensions:
   * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - Windows only
   * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-* Open Visual Studio Code, click **File > Open Folder**
+* Open Visual Studio Code and click **File > Open Folder**
 * Browser your computer and select **eea-website-backend**
-* Within the **Explorer** panel right click **bin > python** and **Copy path**
+* Within the **Explorer** panel right click **develop > bin > python** and **Copy path**
 * Click **View > Command Pallete...** or type **Ctrl+Shift+P** / **Cmd+Shift+P** (MacOS)
   ** Type **Select interpreter** click **Enter path** and right click **Paste**
   ** Type **Select linter** and click **pylint**
-* Within the **Explorer** open `sources > eea.kitkat > eea > kitkat > interfaces.py` and type
+* Within the **Explorer** open `develop > sources > eea.kitkat > eea > kitkat > interfaces.py` and type
   `from zope.component import query`. If you get the auto-complete options, you're done.
 * Happy hacking!
 

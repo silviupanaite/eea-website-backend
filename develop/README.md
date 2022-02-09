@@ -9,7 +9,7 @@ Trainings on how to create your own website using Plone 6 is available as part o
 
 ## Pre-requirements
 
-* Python **3.8+**
+* Python **3.7+**
 * Python **python-venv** and **python-dev**
 * Libraries
   - **libz**

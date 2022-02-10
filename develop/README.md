@@ -56,16 +56,12 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com/) Editor
   * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - Windows only
   * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * Open Visual Studio Code and click **File > Open Folder**
-* Browser your computer and select **eea-website-backend**
-* Within the **Explorer** panel right click **develop > bin > python** and **Copy path**
-* Click **View > Command Pallete...** or type **Ctrl+Shift+P** / **Cmd+Shift+P** (MacOS)
-  ** Type **Select interpreter** click **Enter path** and right click **Paste**
-  ** Type **Select linter** and click **pylint**
+* Browser your computer and select **eea-website-backend > develop**
 * Within the **Explorer** open `develop > sources > eea.kitkat > eea > kitkat > interfaces.py` and type
   `from zope.component import query`. If you get the auto-complete options, you're done.
 * Happy hacking!
 
-**Note** `Hot reload` is not available for Plone backend development, thus you'll have to **restart** Plone after you edit Python code.
+**Note** `Hot reload` is not available for Plone backend development, thus you'll have to **restart** Plone after you edit Python code. Still, there are options to reload your changes without restarting Plone, by using `plone.reload` and `dm.plonepatches.reload`. Go to http://localhost:8080/@@reload `admin:admin`
 
 See also: [Debugging Plone in Visual Studio Code](https://community.plone.org/t/our-pip-based-development-workflow-for-plone/14562#debugging-plone-in-visual-studio-code-11)
 

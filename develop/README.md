@@ -53,6 +53,10 @@ To use other **Python** version run make with `-e` parameter:
 
 ## Develop
 
+Add your addons to `develop/source.ini` and run:
+
+    make develop
+
 We recommend using [Visual Studio Code](https://code.visualstudio.com/) Editor
 * Extensions:
   * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - Windows only
@@ -85,6 +89,15 @@ You can manually run test in terminal, like:
 Or via `Visual Studio Code`
 * Go to `Run > Start Debugging (F5)` and select `Test Plone` debugger.
 * You will need to add the add-ons you want to test to `.vscode/launch.json`, e.g.: `--test-path=sources/eea.banner`
+
+
+## Cleanup
+
+If you want to cleanup your development environment and start from scratch just remove the `develop` folder and re-run all steps from the **Install** section:
+
+    rm -rf develop
+    git checkout develop
+    git pull
 
 
 ## Copyright and license

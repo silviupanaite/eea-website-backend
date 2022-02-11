@@ -18,7 +18,7 @@
             "request": "launch",
             "module": "zope.testrunner",
             "args": [
-                "--test-path=sources"
+                "--test-path=sources/eea.kitkat"
             ],
             "justMyCode": false
         }

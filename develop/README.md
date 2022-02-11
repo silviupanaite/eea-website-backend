@@ -35,6 +35,7 @@ Optionally set default `python3`:
 
     brew install zlib git readline jpeg libpng libyaml
 
+
 ## Install
 
 In order to develop Plone 6 backend add-ons run:
@@ -48,6 +49,7 @@ To use other **Python** version run make with `-e` parameter:
 
     make -e PYTHON=python3.9
     make start
+
 
 ## Develop
 
@@ -65,13 +67,25 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com/) Editor
 
 See also: [Debugging Plone in Visual Studio Code](https://community.plone.org/t/our-pip-based-development-workflow-for-plone/14562#debugging-plone-in-visual-studio-code-11)
 
-## Useful Visual Studio Code shortcuts
+### Useful Visual Studio Code shortcuts
 
 **Note** Replace `Ctrl` with `Cmd` key on MacOS
 
 * **Ctrl+Shift+P** Trim Trailing Whitespace
 * **Ctrl+Shift+P** Sort imports
 * **Ctrl+click** on a `class / import` to go to definition
+
+
+## Testing
+
+You can manually run test in terminal, like:
+
+    bin/zope-testrunner --test-path sources/eea.kitkat
+
+Or via `Visual Studio Code`
+* Go to `Run > Start Debugging (F5)` and select `Test Plone` debugger.
+* You will need to add the add-ons you want to test to `.vscode/launch.json`, e.g.: `--test-path=sources/eea.banner`
+
 
 ## Copyright and license
 

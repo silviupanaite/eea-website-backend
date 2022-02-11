@@ -93,7 +93,7 @@ Or via `Visual Studio Code`
 
 ## Cleanup
 
-If you want to cleanup your development environment and start from scratch just remove the `develop` folder and re-run all steps from the **Install** section:
+If you want to cleanup your development environment and start from scratch just remove the `develop` folder and re-run all steps from the [Install](#install) section:
 
     rm -rf develop
     git checkout develop

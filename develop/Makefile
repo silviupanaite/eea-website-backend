@@ -55,7 +55,7 @@ all: bootstrap install develop
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
-	bin/pip install --upgrade pip mxdev pylint
+	bin/pip install --upgrade pip mxdev pylint black
 
 .PHONY: install
 install:		## Install Plone and develop add-ons

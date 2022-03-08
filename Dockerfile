@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.0-1
+FROM eeacms/plone-backend:6.0.0-2
 ENV PROFILES="eea.kitkat:default eea.progress.workflow:default eea.dexterity.indicators:default eea.dexterity.themes:default"
 
 COPY requirements.txt constraints.txt /app/

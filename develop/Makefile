@@ -73,6 +73,10 @@ develop:		## Develop source.ini add-ons using mxdev
 start:			## Start Plone backend
 	bin/runwsgi -v etc/zope.ini
 
+.PHONY: release
+release:		## See release candidates
+	bin/python scripts/release.py
+
 .PHONY: help
 help:			## Show this help.
 	@echo -e "$$(grep -hE '^\S+:.*##' $(MAKEFILE_LIST) | sed -e 's/:.*##\s*/:/' -e 's/^\(.\+\):\(.*\)/\\x1b[36m\1\\x1b[m:\2/' | column -c2 -t -s :)"

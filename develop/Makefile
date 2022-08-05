@@ -60,7 +60,7 @@ bootstrap:		## Bootstrap python environment
 .PHONY: install
 install:		## Install Plone and develop add-ons
 	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
-	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
+	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
 	bin/mkwsgiinstance -d . -u admin:admin
 	mkdir -p var/blobstorage var/filestorage
 

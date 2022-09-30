@@ -1,4 +1,7 @@
-##6.0.0-24 - 2022-09-27T19:15:22Z
+# Changelog
+
+
+## [6.0.0-24](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-24) - 2022-09-27T19:15:22Z
 
 ### Plone
 
@@ -7,15 +10,15 @@
 ##### eeacms/plone-backend:[6.0.0-17](https://github.com/eea/plone-backend/releases/tag/6.0.0-17)
 ###### Plone
 
-####### Upgrade 6.0.0b1 ~ 6.0.0b2 
+###### Upgrade 6.0.0b1 ~ 6.0.0b2 
 
 * Plone [6.0.0b2](https://plone.org/download/releases/6.0.0b2)
 
 ###### Dependency updates
 
-######## [cryptography](https://pypi.org/project/cryptography/#changelog): 36.0.2 ~ 37.0.2
+###### [cryptography](https://pypi.org/project/cryptography/#changelog): 36.0.2 ~ 37.0.2
 
-######## [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.2.0 ~ 4.3.0
+###### [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.2.0 ~ 4.3.0
 
 ###### Internal
 
@@ -30,7 +33,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 
 - feat(Plone): Upgrade devel to Plone 6.0.0b2 - refs #148213 - [Alin Voinea -  [`15ede2c`](https://github.com/eea/eea-website-backend/commit/15ede2cf8492cdff8ebe3213adfbda6f77e96bc1)]
 
-##6.0.0-23 - 2022-09-21T23:44:36Z
+## [6.0.0-23](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-23) - 2022-09-21T23:44:36Z
 
 ### Plone
 
@@ -39,10 +42,10 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-16](https://github.com/eea/plone-backend/releases/tag/6.0.0-16)
 ###### Dependency updates
 
-######## [pas.plugins.oidc](https://github.com/eea/pas.plugins.oidc/releases): 1.2 ~ 1.3
+###### [pas.plugins.oidc](https://github.com/eea/pas.plugins.oidc/releases): 1.2 ~ 1.3
 
 
-##6.0.0-22 - 2022-09-12T23:44:00Z
+## [6.0.0-22](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-22) - 2022-09-12T23:44:00Z
 
 ### Plone
 
@@ -51,10 +54,10 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-15](https://github.com/eea/plone-backend/releases/tag/6.0.0-15)
 ###### Dependency updates
 
-######## [pas.plugins.oidc](https://pypi.org/project/pas.plugins.oidc/#changelog): 1.1 ~ 1.2
+###### [pas.plugins.oidc](https://pypi.org/project/pas.plugins.oidc/#changelog): 1.1 ~ 1.2
 
 
-##6.0.0-21 - 2022-09-08T23:42:33Z
+## [6.0.0-21](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-21) - 2022-09-08T23:42:33Z
 
 ### Plone
 
@@ -63,13 +66,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-14](https://github.com/eea/plone-backend/releases/tag/6.0.0-14)
 ###### Dependency updates
 
-######## [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.9 ~ 2.0
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.9 ~ 2.0
 
 * Change: Fix constraint bug on env vars when empty string
  [iulianpetchesi refs [#153089](https://taskman.eionet.europa.eu/issues/153089)]
 
 
-##6.0.0-20 - 2022-09-05T15:59:36Z
+## [6.0.0-20](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-20) - 2022-09-05T15:59:36Z
 
 ### Dependency updates
 
@@ -79,13 +82,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
   [avoinea]
 
 
-##6.0.0-19 - 2022-09-01T23:27:23Z
+## [6.0.0-19](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-19) - 2022-09-01T23:27:23Z
 
 ### Internal
 
 - Switch pas.plugins.oidc branch to develop - [Alin Voinea -  [`f1e506a`](https://github.com/eea/eea-website-backend/commit/f1e506abb6a1033e5d1fe2d62a3ba27a67b1432c)]
 
-##6.0.0-18 - 2022-08-30T23:35:44Z
+## [6.0.0-18](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-18) - 2022-08-30T23:35:44Z
 
 ### Plone
 
@@ -94,13 +97,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-13](https://github.com/eea/plone-backend/releases/tag/6.0.0-13)
 ###### Dependency updates
 
-######## [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.8 ~ 1.9
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.8 ~ 1.9
 
 * Change: Convert env vars to list from string
  [iulianpetchesi refs [#153089](https://taskman.eionet.europa.eu/issues/153089)]
 
 
-##6.0.0-17 - 2022-08-29T23:42:18Z
+## [6.0.0-17](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-17) - 2022-08-29T23:42:18Z
 
 ### Plone
 
@@ -109,24 +112,24 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-12](https://github.com/eea/plone-backend/releases/tag/6.0.0-12)
 ###### Dependency updates
 
-######## [eea.banner](https://github.com/eea/eea.banner/releases): 1.3 ~ 1.4
+###### [eea.banner](https://github.com/eea/eea.banner/releases): 1.3 ~ 1.4
 
 * Change: Changed how eea.banner gets STATIC/DYNAMIC env vars
  [iulianpetchesi [#153089](https://taskman.eionet.europa.eu/issues/153089)]
 
-######## [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.7 ~ 1.8
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.7 ~ 1.8
 
 * Change: Enhanced the way env variables are retrieved and used
  [iulianpetchesi refs [#153089](https://taskman.eionet.europa.eu/issues/153089)]
 
 
-##6.0.0-16 - 2022-08-26T16:37:11Z
+## [6.0.0-16](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-16) - 2022-08-26T16:37:11Z
 
 ### Internal
 
 - fix(permissions): Fix compiling .po files - [Alin Voinea -  [`e0a183f`](https://github.com/eea/eea-website-backend/commit/e0a183fe72d9c24366bbe2b37f48bb319c48b8fa)]
 
-##6.0.0-15 - 2022-08-25T23:31:43Z
+## [6.0.0-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-15) - 2022-08-25T23:31:43Z
 
 ### Plone
 
@@ -135,13 +138,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-11](https://github.com/eea/plone-backend/releases/tag/6.0.0-11)
 ###### Dependency updates
 
-######## [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 3.0 ~ 3.1
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 3.0 ~ 3.1
 
 * Feature: Add PATCH support for `@system` endpoint in order to be able to update frontend version
  [avoinea refs [#153334](https://taskman.eionet.europa.eu/issues/153334)]
 
 
-##6.0.0-14 - 2022-08-23T23:35:05Z
+## [6.0.0-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-14) - 2022-08-23T23:35:05Z
 
 ### Plone
 
@@ -150,13 +153,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-10](https://github.com/eea/plone-backend/releases/tag/6.0.0-10)
 ###### Dependency updates
 
-######## [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 2.0 ~ 3.0
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 2.0 ~ 3.0
 
 * Feature: Added backend/frontend version registry records + automatically update the version on zope startup
  [iulianpetchesi refs [#153334](https://taskman.eionet.europa.eu/issues/153334)]
 
 
-##6.0.0-13 - 2022-08-19T23:41:18Z
+## [6.0.0-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-13) - 2022-08-19T23:41:18Z
 
 ### Plone
 
@@ -165,13 +168,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-9](https://github.com/eea/plone-backend/releases/tag/6.0.0-9)
 ###### Dependency updates
 
-######## [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.9 ~ 2.0
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.9 ~ 2.0
 
 * Change: Release eea.coremetadata
  [nileshgulia1]
 
 
-##6.0.0-12 - 2022-08-18T23:42:08Z
+## [6.0.0-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-12) - 2022-08-18T23:42:08Z
 
 ### Plone
 
@@ -180,13 +183,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-8](https://github.com/eea/plone-backend/releases/tag/6.0.0-8)
 ###### Dependency updates
 
-######## [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.6 ~ 1.7
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 1.6 ~ 1.7
 
 * Change: Release
  [nileshgulia1]
 
 
-##6.0.0-11 - 2022-08-11T07:46:50Z
+## [6.0.0-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-11) - 2022-08-11T07:46:50Z
 
 ### Dependency updates
 
@@ -196,7 +199,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 * Feature: Add homepage_inverse_view and homepage_view to LRF ctype [avoinea]
 
 
-##6.0.0-10 - 2022-08-09T23:25:38Z
+## [6.0.0-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-10) - 2022-08-09T23:25:38Z
 
 ### Dependency updates
 
@@ -207,7 +210,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
   [avoinea refs [#153145](https://taskman.eionet.europa.eu/issues/153145)]
 
 
-##6.0.0-9 - 2022-08-05T10:45:28Z
+## [6.0.0-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-9) - 2022-08-05T10:45:28Z
 
 ### Plone
 
@@ -216,27 +219,27 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-7](https://github.com/eea/plone-backend/releases/tag/6.0.0-7)
 ###### Plone
 
-####### Upgrade 6.0.0a6 ~ 6.0.0b1 
+###### Upgrade 6.0.0a6 ~ 6.0.0b1 
 
 * Plone [6.0.0b1](https://plone.org/download/releases/6.0.0b1)
 
 ###### Dependency updates
 
-######## [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.1 ~ 2.2.2
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.1 ~ 2.2.2
 
-######## [Mako](https://pypi.org/project/Mako/#changelog): 1.2.0 ~ 1.2.1
+###### [Mako](https://pypi.org/project/Mako/#changelog): 1.2.0 ~ 1.2.1
 
-######## [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.6.0 ~ 1.9.0
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.6.0 ~ 1.9.0
 
-######## [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.1.0 ~ 4.2.0
+###### [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.1.0 ~ 4.2.0
 
-####### Downgrades 
+###### Downgrades 
 
-######## [cryptography](https://pypi.org/project/cryptography/#changelog): 37.0.2 ~ 36.0.2
+###### [cryptography](https://pypi.org/project/cryptography/#changelog): 37.0.2 ~ 36.0.2
 
-####### New packages
+###### New packages
 
-######## [python-ldap](https://pypi.org/project/python-ldap/#changelog): 3.4.0
+###### [python-ldap](https://pypi.org/project/python-ldap/#changelog): 3.4.0
 
 ###### Internal
 
@@ -256,7 +259,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 - Update to Plone 6.0.0b1 - [Alin Voinea -  [`4b3d6c9`](https://github.com/eea/eea-website-backend/commit/4b3d6c90f2153bfc12db44c7ea3a7d0ede773927)]
 - Install collective.exportimport to devel env - [Alin Voinea -  [`3e7b10b`](https://github.com/eea/eea-website-backend/commit/3e7b10b2ce2a22a06d794a40d9caede5d20f65ab)]
 
-##6.0.0-8 - 2022-06-30T10:22:51Z
+## [6.0.0-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-8) - 2022-06-30T10:22:51Z
 
 ### Plone
 
@@ -265,7 +268,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-6](https://github.com/eea/plone-backend/releases/tag/6.0.0-6)
 ###### Plone
 
-####### Upgrade 6.0.0a3 ~ 6.0.0a6 
+###### Upgrade 6.0.0a3 ~ 6.0.0a6 
 
 * Plone [6.0.0a6](https://plone.org/download/releases/6.0.0a6)
 * Plone [6.0.0a5](https://plone.org/download/releases/6.0.0a5)
@@ -273,56 +276,56 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 
 ###### Dependency updates
 
-######## [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.4 ~ 1.5
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.4 ~ 1.5
 
-######## [dnspython](https://pypi.org/project/dnspython/#changelog): 2.2.0 ~ 2.2.1
+###### [dnspython](https://pypi.org/project/dnspython/#changelog): 2.2.0 ~ 2.2.1
 
-######## [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.8 ~ 1.9
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.8 ~ 1.9
 
 * Change: add eea.coremetadata dependency
  [nileshgulia1]
 
-######## [eventlet](https://pypi.org/project/eventlet/#changelog): 0.33.0 ~ 0.33.1
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.33.0 ~ 0.33.1
 
-######## [libvcs](https://pypi.org/project/libvcs/#changelog): 0.11.0 ~ 0.11.1
+###### [libvcs](https://pypi.org/project/libvcs/#changelog): 0.11.0 ~ 0.11.1
 
-######## [mxdev](https://pypi.org/project/mxdev/#changelog): 2.0.0 ~ 2.1.0
+###### [mxdev](https://pypi.org/project/mxdev/#changelog): 2.0.0 ~ 2.1.0
 
-######## [node.ext.ldap](https://pypi.org/project/node.ext.ldap/#changelog): 1.0rc2 ~ 1.0
+###### [node.ext.ldap](https://pypi.org/project/node.ext.ldap/#changelog): 1.0rc2 ~ 1.0
 
-######## [node.ext.ugm](https://pypi.org/project/node.ext.ugm/#changelog): 0.9.13 ~ 1.0
+###### [node.ext.ugm](https://pypi.org/project/node.ext.ugm/#changelog): 0.9.13 ~ 1.0
 
-######## [odict](https://pypi.org/project/odict/#changelog): 1.8.0 ~ 1.9.0
+###### [odict](https://pypi.org/project/odict/#changelog): 1.8.0 ~ 1.9.0
 
-######## [plumber](https://pypi.org/project/plumber/#changelog): 1.6 ~ 1.7
+###### [plumber](https://pypi.org/project/plumber/#changelog): 1.6 ~ 1.7
 
-######## [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.5.6 ~ 1.6.0
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.5.6 ~ 1.6.0
 
-######## [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 4.0.0a3 ~ 4.0.0a4.dev0
+###### [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 4.0.0a3 ~ 4.0.0a4.dev0
 
-####### New packages
+###### New packages
 
-######## [Beaker](https://pypi.org/project/Beaker/#changelog): 1.11.0
+###### [Beaker](https://pypi.org/project/Beaker/#changelog): 1.11.0
 
-######## [cryptography](https://pypi.org/project/cryptography/#changelog): 37.0.2
+###### [cryptography](https://pypi.org/project/cryptography/#changelog): 37.0.2
 
-######## [defusedxml](https://pypi.org/project/defusedxml/#changelog): 0.7.1
+###### [defusedxml](https://pypi.org/project/defusedxml/#changelog): 0.7.1
 
-######## [eea.coremetadata](https://pypi.org/project/eea.coremetadata/#changelog): 1.6
+###### [eea.coremetadata](https://pypi.org/project/eea.coremetadata/#changelog): 1.6
 
-######## [Mako](https://pypi.org/project/Mako/#changelog): 1.2.0
+###### [Mako](https://pypi.org/project/Mako/#changelog): 1.2.0
 
-######## [MarkupSafe](https://pypi.org/project/MarkupSafe/#changelog): 2.1.1
+###### [MarkupSafe](https://pypi.org/project/MarkupSafe/#changelog): 2.1.1
 
-######## [oic](https://pypi.org/project/oic/#changelog): 1.4.0
+###### [oic](https://pypi.org/project/oic/#changelog): 1.4.0
 
-######## [pycryptodomex](https://pypi.org/project/pycryptodomex/#changelog): 3.15.0
+###### [pycryptodomex](https://pypi.org/project/pycryptodomex/#changelog): 3.15.0
 
-######## [pyjwkest](https://pypi.org/project/pyjwkest/#changelog): 1.4.2
+###### [pyjwkest](https://pypi.org/project/pyjwkest/#changelog): 1.4.2
 
-######## [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.1.0
+###### [typing-extensions](https://pypi.org/project/typing-extensions/#changelog): 4.1.0
 
-######## [z3c.jbot](https://pypi.org/project/z3c.jbot/#changelog): 1.1.1
+###### [z3c.jbot](https://pypi.org/project/z3c.jbot/#changelog): 1.1.1
 
 ###### Internal
 
@@ -345,7 +348,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 - Upgrade to Plone 6.0.0a4 - [Alin Voinea -  [`49b433d`](https://github.com/eea/eea-website-backend/commit/49b433d13cc840da3fbc7d1f1eb0b74b4fc5594e)]
 - Add eea.coremetadata to source.ini - [Alin Voinea -  [`62b54e6`](https://github.com/eea/eea-website-backend/commit/62b54e6aff7eee4017517eabe189806ad343b435)]
 
-##6.0.0-7 - 2022-03-25T00:41:42Z
+## [6.0.0-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-7) - 2022-03-25T00:41:42Z
 
 ### Plone
 
@@ -354,14 +357,14 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-5](https://github.com/eea/plone-backend/releases/tag/6.0.0-5)
 ###### Dependency updates
 
-######## [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.0 ~ 2.2.1
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.0 ~ 2.2.1
 
 ###### Internal
 
 - Update constraints.txt - [Alexandru Ghica - [`5d6a899`](https://github.com/eea/plone-backend/commit/5d6a899bf9f508aff37f3ddd2fef8e297c3446c6)]
 
 
-##6.0.0-6 - 2022-03-23T00:43:15Z
+## [6.0.0-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-6) - 2022-03-23T00:43:15Z
 
 ### Plone
 
@@ -370,13 +373,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-4](https://github.com/eea/plone-backend/releases/tag/6.0.0-4)
 ###### Dependency updates
 
-######## [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.7 ~ 1.8
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 1.7 ~ 1.8
 
 * Feature: added pas.plugins.oidc as dependency
  [alecghica refs [#137187](https://taskman.eionet.europa.eu/issues/137187)]
 
 
-##6.0.0-5 - 2022-03-18T17:01:44Z
+## [6.0.0-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-5) - 2022-03-18T17:01:44Z
 
 ### Plone
 
@@ -385,9 +388,9 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-3](https://github.com/eea/plone-backend/releases/tag/6.0.0-3)
 ###### Dependency updates
 
-####### New packages
+###### New packages
 
-######## [pas.plugins.oidc](https://github.com/eea/pas.plugins.oidc): 1.1
+###### [pas.plugins.oidc](https://github.com/eea/pas.plugins.oidc): 1.1
 
 ###### Internal
 
@@ -406,7 +409,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 - Add missing pas.plugin.oidc and eea.website.policy to develop sources.ini - [Alin Voinea -  [`05de72d`](https://github.com/eea/eea-website-backend/commit/05de72d52f391c9cc8b36f4bf80894787837c875)]
 - Release eea.website.policy 1.0 - [Alin Voinea -  [`669f0bd`](https://github.com/eea/eea-website-backend/commit/669f0bdd3e4a69b613c6d654b8310116ae6218d0)]
 
-##6.0.0-4 - 2022-03-15T00:25:07Z
+## [6.0.0-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-4) - 2022-03-15T00:25:07Z
 
 ### Dependency updates
 
@@ -416,7 +419,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
   [avoinea refs [#147129](https://taskman.eionet.europa.eu/issues/147129)]
 
 
-##6.0.0-3 - 2022-03-12T00:25:49Z
+## [6.0.0-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-3) - 2022-03-12T00:25:49Z
 
 ### Dependency updates
 
@@ -426,7 +429,7 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
   [avoinea refs [#145772](https://taskman.eionet.europa.eu/issues/145772)]
 
 
-##6.0.0-2 - 2022-03-08T14:09:03Z
+## [6.0.0-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-2) - 2022-03-08T14:09:03Z
 
 ### Plone
 
@@ -435,13 +438,13 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 ##### eeacms/plone-backend:[6.0.0-2](https://github.com/eea/plone-backend/releases/tag/6.0.0-2)
 ###### Dependency updates
 
-####### New packages
+###### New packages
 
-######## [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.4
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.4
 
-######## [hurry.filesize](https://pypi.org/project/hurry.filesize/#changelog): 0.9
+###### [hurry.filesize](https://pypi.org/project/hurry.filesize/#changelog): 0.9
 
-######## [ijson](https://pypi.org/project/ijson/#changelog): 3.1.4
+###### [ijson](https://pypi.org/project/ijson/#changelog): 3.1.4
 
 ###### Internal
 
@@ -453,85 +456,85 @@ This reverts commit aa21fc2bca4129de47e79abc09635faeae922360. - [Alin Voinea - [
 
 - Test CORS via env - [Alin Voinea -  [`8496c72`](https://github.com/eea/eea-website-backend/commit/8496c7229c053cf6190bf9c289223f1e86c887f5)]
 
-##6.0.0-1 - 2022-03-02T13:56:05Z
+## [6.0.0-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-1) - 2022-03-02T13:56:05Z
 
 ### Plone
 
 ##### eeacms/plone-backend:[6.0.0-1](https://github.com/eea/plone-backend/releases/tag/6.0.0-1)
 ###### Plone
 
-####### Plone [6.0.0a3](https://plone.org/download/releases/6.0.0a3)
+###### Plone [6.0.0a3](https://plone.org/download/releases/6.0.0a3)
 ###### Dependency updates
 
-####### New packages
+###### New packages
 
-######## [argparse](https://pypi.org/project/argparse/#changelog): 1.4.0
+###### [argparse](https://pypi.org/project/argparse/#changelog): 1.4.0
 
-######## [bda.cache](https://pypi.org/project/bda.cache/#changelog): 1.3.0
+###### [bda.cache](https://pypi.org/project/bda.cache/#changelog): 1.3.0
 
-######## [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.0
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 2.2.0
 
-######## [dnspython](https://pypi.org/project/dnspython/#changelog): 2.2.0
+###### [dnspython](https://pypi.org/project/dnspython/#changelog): 2.2.0
 
-######## [eea.api.layout](https://pypi.org/project/eea.api.layout/#changelog): 3.2
+###### [eea.api.layout](https://pypi.org/project/eea.api.layout/#changelog): 3.2
 
-######## [eea.api.taxonomy](https://pypi.org/project/eea.api.taxonomy/#changelog): 1.5
+###### [eea.api.taxonomy](https://pypi.org/project/eea.api.taxonomy/#changelog): 1.5
 
-######## [eea.banner](https://pypi.org/project/eea.banner/#changelog): 1.3
+###### [eea.banner](https://pypi.org/project/eea.banner/#changelog): 1.3
 
-######## [eea.cache](https://pypi.org/project/eea.cache/#changelog): 9.5
+###### [eea.cache](https://pypi.org/project/eea.cache/#changelog): 9.5
 
-######## [eea.geolocation](https://pypi.org/project/eea.geolocation/#changelog): 2.1
+###### [eea.geolocation](https://pypi.org/project/eea.geolocation/#changelog): 2.1
 
-######## [eea.kitkat](https://pypi.org/project/eea.kitkat/#changelog): 1.7
+###### [eea.kitkat](https://pypi.org/project/eea.kitkat/#changelog): 1.7
 
-######## [eea.schema.slate](https://pypi.org/project/eea.schema.slate/#changelog): 1.2
+###### [eea.schema.slate](https://pypi.org/project/eea.schema.slate/#changelog): 1.2
 
-######## [eea.sentry](https://pypi.org/project/eea.sentry/#changelog): 2.4
+###### [eea.sentry](https://pypi.org/project/eea.sentry/#changelog): 2.4
 
-######## [eea.volto.policy](https://pypi.org/project/eea.volto.policy/#changelog): 1.7
+###### [eea.volto.policy](https://pypi.org/project/eea.volto.policy/#changelog): 1.7
 
-######## [eea.zotero](https://pypi.org/project/eea.zotero/#changelog): 1.4
+###### [eea.zotero](https://pypi.org/project/eea.zotero/#changelog): 1.4
 
-######## [eventlet](https://pypi.org/project/eventlet/#changelog): 0.33.0
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.33.0
 
-######## [five.globalrequest](https://pypi.org/project/five.globalrequest/#changelog): 99.1
+###### [five.globalrequest](https://pypi.org/project/five.globalrequest/#changelog): 99.1
 
-######## [greenlet](https://pypi.org/project/greenlet/#changelog): 1.1.2
+###### [greenlet](https://pypi.org/project/greenlet/#changelog): 1.1.2
 
-######## [libvcs](https://pypi.org/project/libvcs/#changelog): 0.11.0
+###### [libvcs](https://pypi.org/project/libvcs/#changelog): 0.11.0
 
-######## [mxdev](https://pypi.org/project/mxdev/#changelog): 2.0.0
+###### [mxdev](https://pypi.org/project/mxdev/#changelog): 2.0.0
 
-######## [node](https://pypi.org/project/node/#changelog): 0.9.28
+###### [node](https://pypi.org/project/node/#changelog): 0.9.28
 
-######## [node.ext.ldap](https://pypi.org/project/node.ext.ldap/#changelog): 1.0rc2
+###### [node.ext.ldap](https://pypi.org/project/node.ext.ldap/#changelog): 1.0rc2
 
-######## [node.ext.ugm](https://pypi.org/project/node.ext.ugm/#changelog): 0.9.13
+###### [node.ext.ugm](https://pypi.org/project/node.ext.ugm/#changelog): 0.9.13
 
-######## [odict](https://pypi.org/project/odict/#changelog): 1.8.0
+###### [odict](https://pypi.org/project/odict/#changelog): 1.8.0
 
-######## [pas.plugins.ldap](https://pypi.org/project/pas.plugins.ldap/#changelog): 1.8.1
+###### [pas.plugins.ldap](https://pypi.org/project/pas.plugins.ldap/#changelog): 1.8.1
 
-######## [passlib](https://pypi.org/project/passlib/#changelog): 1.7.4
+###### [passlib](https://pypi.org/project/passlib/#changelog): 1.7.4
 
-######## [plumber](https://pypi.org/project/plumber/#changelog): 1.6
+###### [plumber](https://pypi.org/project/plumber/#changelog): 1.6
 
-######## [python-memcached](https://pypi.org/project/python-memcached/#changelog): 1.59
+###### [python-memcached](https://pypi.org/project/python-memcached/#changelog): 1.59
 
-######## [PyYAML](https://pypi.org/project/PyYAML/#changelog): 6.0
+###### [PyYAML](https://pypi.org/project/PyYAML/#changelog): 6.0
 
-######## [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.5.6
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.5.6
 
-######## [yafowil](https://pypi.org/project/yafowil/#changelog): 2.3.4
+###### [yafowil](https://pypi.org/project/yafowil/#changelog): 2.3.4
 
-######## [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 4.0.0a3
+###### [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 4.0.0a3
 
-######## [yafowil.widget.array](https://pypi.org/project/yafowil.widget.array/#changelog): 1.6.1
+###### [yafowil.widget.array](https://pypi.org/project/yafowil.widget.array/#changelog): 1.6.1
 
-######## [yafowil.widget.dict](https://pypi.org/project/yafowil.widget.dict/#changelog): 1.8
+###### [yafowil.widget.dict](https://pypi.org/project/yafowil.widget.dict/#changelog): 1.8
 
-######## [yafowil.yaml](https://pypi.org/project/yafowil.yaml/#changelog): 1.3.1
+###### [yafowil.yaml](https://pypi.org/project/yafowil.yaml/#changelog): 1.3.1
 
 ###### Internal
 

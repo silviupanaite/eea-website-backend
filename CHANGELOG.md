@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [6.0.0-27](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-27) - 2022-10-06T10:50:22Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-19 ~ 6.0.0-20 
+
+##### eeacms/plone-backend:[6.0.0-20](https://github.com/eea/plone-backend/releases/tag/6.0.0-20)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 2.0 ~ 2.1
+
+* Change: Update topics taxonomy with new info + upgrade step
+ [iulianpetchesi refs #154859]
+
+###### Internal
+
+- docs: Update changelog - [valentinab25 - [`0692eab`](https://github.com/eea/plone-backend/commit/0692eab5b00dc68ecf5fa0fd88bb89915a78362d)]
+- docs: Fix release link - [valentinab25 - [`1e3833e`](https://github.com/eea/plone-backend/commit/1e3833e81999c2a59498926fe1c1d07dc46bbcc7)]
+- docs: Fix format - [valentinab25 - [`8216dfc`](https://github.com/eea/plone-backend/commit/8216dfc28822715c8c0da918f1da0dbc36231b4c)]
+
+### Internal
+
+- docs: Remove taskman links - [valentinab25 -  [`a58d8f3`](https://github.com/eea/eea-website-backend/commit/a58d8f3e1f8c782751ebf302d3e49ad403dcbfd1)]
+
 ## [6.0.0-26](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-26) - 2022-10-03T23:33:22Z
 
 ### Plone

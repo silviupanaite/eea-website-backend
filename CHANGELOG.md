@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.0-28](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-28) - 2022-10-07T23:59:02Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-20 ~ 6.0.0-21 
+
+##### eeacms/plone-backend:[6.0.0-21](https://github.com/eea/plone-backend/releases/tag/6.0.0-21)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 2.1 ~ 2.2
+
+* Change: Added the field rights back
+ [dobri1408]
+
+
 ## [6.0.0-27](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-27) - 2022-10-06T10:50:22Z
 
 ### Plone

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.0-29](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-29) - 2022-10-21T23:54:09Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-21 ~ 6.0.0-22 
+
+##### eeacms/plone-backend:[6.0.0-22](https://github.com/eea/plone-backend/releases/tag/6.0.0-22)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 2.2 ~ 2.3
+
+* Change: Develop #155903
+ [alecghica]
+
+
 ## [6.0.0-28](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-28) - 2022-10-07T23:59:02Z
 
 ### Plone

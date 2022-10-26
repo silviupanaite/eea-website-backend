@@ -52,6 +52,10 @@ PYTHON?=python3.10
 .PHONY: all
 all: bootstrap install develop
 
+.PHONY: clean
+clean:			## Cleanup environment
+	rm -rf bin include lib lib64 inituser pyvenv.cfg *.egg-info node_modules
+
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .

@@ -1,3 +1,7 @@
+plone.restapi
+plone.rest
+plone.volto
+
 eea.dexterity.indicators
 eea.dexterity.themes
 eea.progress.workflow

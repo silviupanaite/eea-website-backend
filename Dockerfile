@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.0-23
+FROM eeacms/plone-backend:6.0.0-24
 ENV PROFILES="eea.website.policy:default"
 
 COPY requirements.txt constraints.txt /app/

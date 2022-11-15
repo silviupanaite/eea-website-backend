@@ -1,6 +1,35 @@
 # Changelog
 
 
+## [6.0.0-31](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-31) - 2022-11-15T00:47:04Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-23 ~ 6.0.0-24 
+
+##### eeacms/plone-backend:[6.0.0-24](https://github.com/eea/plone-backend/releases/tag/6.0.0-24)
+###### Dependency updates
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.1 ~ 2.3
+
+* Change: Rename controlpanel id to avoid conflicts with plone.formwidget.geolocation
+ [avoinea]
+
+* Change: Changed restapi encoding from ascii to latin-1 in order to better
+ represent ascii characters
+ [iulianpetchesi refs #153129]
+
+### Dependency updates
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 1.3 ~ 2.0
+
+* Breaking: Remove TTW DX Layout marker interface - requires plone.restapi 8.32.0
+  [avoinea - refs #151856]
+
+### Internal
+
+- Upgrade to plone.restapi 8.32.1 - [Alin Voinea -  [`0c86584`](https://github.com/eea/eea-website-backend/commit/0c8658448505f0fb60e11a0beeeb222aa55bfbbd)]
+
 ## [6.0.0-30](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-30) - 2022-10-26T23:42:59Z
 
 ### Plone

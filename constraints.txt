@@ -7,3 +7,5 @@ eea.dexterity.indicators==4.9
 eea.dexterity.themes==1.4
 eea.progress.workflow==3.0
 eea.website.policy==2.0
+
+collective.volto.subsites==1.4.0

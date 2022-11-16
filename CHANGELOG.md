@@ -1,6 +1,26 @@
 # Changelog
 
 
+## [6.0.0-32](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-32) - 2022-11-16T00:45:30Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-24 ~ 6.0.0-25 
+
+##### eeacms/plone-backend:[6.0.0-25](https://github.com/eea/plone-backend/releases/tag/6.0.0-25)
+###### Dependency updates
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.3 ~ 2.4
+
+* Change: Restore old encoding for restapi
+ [iulianpetchesi refs #153129]
+
+### Internal
+
+- Add collective.volto.subsites - [Tiberiu Ichim -  [`3641742`](https://github.com/eea/eea-website-backend/commit/36417423c394a111b0fcfd44d46b8e2deeade116)]
+- Add subsites as dependency - [Tiberiu Ichim -  [`1156120`](https://github.com/eea/eea-website-backend/commit/1156120b19566bf677dbec4f00789a4d3b94f886)]
+- More constraints - [Tiberiu Ichim -  [`6ee4644`](https://github.com/eea/eea-website-backend/commit/6ee46448f84ab02bebd3fcb867f566325a4b85d4)]
+
 ## [6.0.0-31](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-31) - 2022-11-15T00:47:04Z
 
 ### Plone

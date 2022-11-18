@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.0-33](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-33) - 2022-11-18T00:52:26Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-25 ~ 6.0.0-26 
+
+##### eeacms/plone-backend:[6.0.0-26](https://github.com/eea/plone-backend/releases/tag/6.0.0-26)
+###### Dependency updates
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.4 ~ 2.5
+
+* Change: Changed restapi encoding from ascii to latin-1 in order to better
+ represent ascii characters
+ [iulianpetchesi refs #153129]
+
+
 ## [6.0.0-32](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-32) - 2022-11-16T00:45:30Z
 
 ### Plone

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.0-34](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-34) - 2022-11-19T00:46:20Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-26 ~ 6.0.0-27 
+
+##### eeacms/plone-backend:[6.0.0-27](https://github.com/eea/plone-backend/releases/tag/6.0.0-27)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 3.1 ~ 4.0
+
+* Feature: New category actions: footer, social, copyright and contact
+ [avoinea refs #151856]
+
+
 ## [6.0.0-33](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-33) - 2022-11-18T00:52:26Z
 
 ### Plone

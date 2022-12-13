@@ -1,9 +1,4 @@
-plone.restapi
-plone.rest
-plone.volto
-
 collective.volto.subsites
-
 eea.dexterity.indicators
 eea.dexterity.themes
 eea.progress.workflow

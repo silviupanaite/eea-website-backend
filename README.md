@@ -1,3 +1,8 @@
+
+[![master](https://ci.eionet.europa.eu/buildStatus/icon?job=plone/eea-website-backend/master)](https://ci.eionet.europa.eu/blue/organizations/jenkins/plone%2Feea-website-backend/activity/)
+[![Release](https://img.shields.io/docker/v/eeacms/eea-website-backend?sort=semver)](https://hub.docker.com/r/eeacms/eea-website-backend/tags)
+
+
 # EEA Main Website backend (Plone 6)
 
 Plone 6 backend for EEA Main website. See also [Plone 6 frontend for EEA Main website](https://github.com/eea/eea-website-frontend).

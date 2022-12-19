@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.0-40](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-40) - 2022-12-19T13:30:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-32 ~ 6.0.0-33 
+
+##### eeacms/plone-backend:[6.0.0-33](https://github.com/eea/plone-backend/releases/tag/6.0.0-33)
+###### Internal
+
+- test(addons): Fix expected std out for addons test - [Alin Voinea - [`d15d782`](https://github.com/eea/plone-backend/commit/d15d782fd277239d4dbba8ace93d112f80b561b4)]
+
+### Internal
+
+-  test(addons): Fix expected std out for addons test - [valentinab25 -  [`38f0c0c`](https://github.com/eea/eea-website-backend/commit/38f0c0cf0ef94d590974dfb558f7af31f0a02488)]
+
 ## [6.0.0-39](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-39) - 2022-12-16T16:52:25Z
 
 ### Plone

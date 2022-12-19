@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.0-41](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-41) - 2022-12-19T15:26:23Z
+
+### Internal
+
+- docs: Add badges - [valentinab25 -  [`5126f15`](https://github.com/eea/eea-website-backend/commit/5126f1540eb35c8f0b76a360d34b6a7ad6ba32e3)]
+
 ## [6.0.0-40](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-40) - 2022-12-19T13:30:45Z
 
 ### Plone

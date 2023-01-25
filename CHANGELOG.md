@@ -1,6 +1,29 @@
 # Changelog
 
 
+## [6.0.0-43](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-43) - 2023-01-25T09:37:49Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-34 ~ 6.0.0-36 
+
+##### eeacms/plone-backend:[6.0.0-36](https://github.com/eea/plone-backend/releases/tag/6.0.0-36)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 4.2 ~ 4.3
+
+* Feature: Send captcha data as bytes, add @captchaverify endpoints
+ [iulianpetchesi refs #157143]
+##### eeacms/plone-backend:[6.0.0-35](https://github.com/eea/plone-backend/releases/tag/6.0.0-35)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 4.1 ~ 4.2
+
+* Feature: Added friendlycaptcha settings + verify to be used with redmine
+ helpdesk block
+ [iulianpetchesi refs #157143]
+
+
 ## [6.0.0-42](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-42) - 2022-12-20T14:42:42Z
 
 ### Plone

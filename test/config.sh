@@ -11,7 +11,6 @@ imageTests+=(
 		plone-site
 		plone-addons
 		plone-cors
-		plone-arbitrary-user
 		plone-zeoclient
 		plone-relstorage
 		plone-listenport

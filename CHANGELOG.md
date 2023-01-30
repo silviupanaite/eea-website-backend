@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.0-47](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-47) - 2023-01-30T22:01:28Z
+
+### Internal
+
+- Fix plone-site test - [Alin Voinea -  [`1bb3924`](https://github.com/eea/eea-website-backend/commit/1bb3924afb04fe74127ce9c90550b31544e9fbd7)]
+
 ## [6.0.0-46](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-46) - 2023-01-30T21:39:17Z
 
 ### Internal

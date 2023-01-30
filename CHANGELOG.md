@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.0-48](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-48) - 2023-01-30T22:21:30Z
+
+### Internal
+
+- Remove faulty arbitrary user test - [Alin Voinea -  [`e8974e2`](https://github.com/eea/eea-website-backend/commit/e8974e2092fd37adb06c58eac665ded9aa239c9b)]
+
 ## [6.0.0-47](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-47) - 2023-01-30T22:01:28Z
 
 ### Internal

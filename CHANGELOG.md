@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.0-45](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-45) - 2023-01-30T20:33:32Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.0-37 ~ 6.0.0-38 
+
+##### eeacms/plone-backend:[6.0.0-38](https://github.com/eea/plone-backend/releases/tag/6.0.0-38)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 4.4 ~ 4.6
+
+* Change: Modify endpoint permission
+ [iulianpetchesi refs #157143]
+
+* Task: Return true/false for captcha post
+ [iulianpetchesi refs #157143]
+
+
 ## [6.0.0-44](https://github.com/eea/eea-website-backend/releases/tag/6.0.0-44) - 2023-01-28T00:52:43Z
 
 ### Plone

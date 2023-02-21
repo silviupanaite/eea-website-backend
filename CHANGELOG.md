@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.1-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.1-2) - 2023-02-21T00:18:13Z
+
+### Internal
+
+- Upgrade dev to Plone 6.0.1 - [Alin Voinea -  [`9d97340`](https://github.com/eea/eea-website-backend/commit/9d9734082bcfde00422084270b9c62b83f337685)]
+
 ## [6.0.1-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.1-1) - 2023-02-17T18:27:39Z
 
 ### Plone

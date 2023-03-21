@@ -4,3 +4,4 @@ eea.dexterity.themes
 eea.progress.workflow
 eea.website.policy
 eea.api.dataconnector
+moz-sql-parser

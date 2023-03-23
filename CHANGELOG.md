@@ -1,6 +1,52 @@
 # Changelog
 
 
+## [6.0.2-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.2-1) - 2023-03-23T18:09:47Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.1-1 ~ 6.0.2-1 
+
+##### eeacms/plone-backend:[6.0.2-1](https://github.com/eea/plone-backend/releases/tag/6.0.2-1)
+###### Plone
+
+###### Upgrade 6.0.1 ~ 6.0.2 
+
+* Plone [6.0.2](https://plone.org/download/releases/6.0.2)
+
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 2.5 ~ 3.0
+
+* Change: Register indexes in portal_catalog and add indexer for temporal _coverage index
+ [razvanMiu]
+
+###### [plone.app.robotframework](https://pypi.org/project/plone.app.robotframework/#changelog): 2.0.0 ~ 2.0.1
+
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.15.0 ~ 1.17.0
+
+###### [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 4.0.0a5.dev0 ~ 4.0.0a5
+
+###### Internal
+
+- Release 6.0.2 (#1)
+
+* Release plone/plone-backend 6.0.2
+
+* Use pylibmc instead of python-memcached
+
+* test(Jenkins): Build no-cache
+
+* Add entrypoint and command - [Alin Voinea - [`ccac832`](https://github.com/eea/plone-backend/commit/ccac832f2eb89fb654a1d1104ae92bf003c35a6f)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 4.9 ~ 5.0
+
+* Change: Cleanup head_of_group_email in favor of taxonomy_hog_users
+  [avoinea]
+
+
 ## [6.0.1-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.1-2) - 2023-02-21T00:18:13Z
 
 ### Internal

@@ -4,6 +4,8 @@ pipeline {
   environment {
     IMAGE_NAME = "eeacms/eea-website-backend"
     GIT_NAME = "eea-website-backend"
+    SONARQUBE_TAG = 'www.eea.europa.eu-en'
+    SONARQUBE_TAG_DEMO = 'demo-www.eea.europa.eu'    
   }
 
   parameters {
@@ -43,6 +45,47 @@ pipeline {
         }
       }
     }
+
+    
+
+    stage('Update SonarQube Tags: Prod') {
+      when {
+        not {
+          environment name: 'SONARQUBE_TAG', value: ''
+        }
+        buildingTag()
+      }
+      steps{
+        node(label: 'docker') {
+          withSonarQubeEnv('Sonarqube') {
+            withCredentials([string(credentialsId: 'eea-jenkins-token', variable: 'GIT_TOKEN')]) {
+              sh '''docker pull eeacms/gitflow'''
+              sh '''docker run -i --rm --name="${BUILD_TAG}-sonar" -e GIT_NAME=${GIT_NAME} -e GIT_TOKEN="${GIT_TOKEN}" -e SONARQUBE_TAG=${SONARQUBE_TAG} -e SONARQUBE_TOKEN=${SONAR_AUTH_TOKEN} -e SONAR_HOST_URL=${SONAR_HOST_URL}  eeacms/gitflow /update_sonarqube_tags_backend.sh'''
+            }
+          }
+        }
+      }
+    }
+
+    stage('Update SonarQube Tags: Demo') {
+      when {
+        not {
+          environment name: 'SONARQUBE_TAG_DEMO', value: ''
+        }
+        buildingTag()
+      }
+      steps{
+        node(label: 'docker') {
+          withSonarQubeEnv('Sonarqube') {
+            withCredentials([string(credentialsId: 'eea-jenkins-token', variable: 'GIT_TOKEN')]) {
+              sh '''docker pull eeacms/gitflow'''
+              sh '''docker run -i --rm --name="${BUILD_TAG}-sonar" -e GIT_NAME=${GIT_NAME} -e GIT_TOKEN="${GIT_TOKEN}" -e SONARQUBE_TAG=${SONARQUBE_TAG_DEMO} -e SONARQUBE_TOKEN=${SONAR_AUTH_TOKEN} -e SONAR_HOST_URL=${SONAR_HOST_URL}  eeacms/gitflow /update_sonarqube_tags_backend.sh'''
+            }
+          }
+        }
+      }
+    }
+  }
 
 
  }

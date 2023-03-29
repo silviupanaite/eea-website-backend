@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [6.0.2-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.2-2) - 2023-03-29T08:28:17Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.2-1 ~ 6.0.2-2 
+
+##### eeacms/plone-backend:[6.0.2-2](https://github.com/eea/plone-backend/releases/tag/6.0.2-2)
+###### Internal
+
+- Add missing MEMCACHE_SERVER env - [Alin Voinea - [`960fde2`](https://github.com/eea/plone-backend/commit/960fde29fab7abef4d0f40ed8df5586ce2cfc4b2)]
+
+### Internal
+
+- Add update sonarqube tags for backend - [valentinab25 -  [`d315897`](https://github.com/eea/eea-website-backend/commit/d3158972dfa73e0880a67e40944e93133a202c9c)]
+- Update develop to Plone 6.0.2 - [Alin Voinea -  [`51b2bf7`](https://github.com/eea/eea-website-backend/commit/51b2bf75a99ae690d16ad4c4d471bd082ba9dc2a)]
+- test(Jenkins): Fix Jenkinsfile - [Alin Voinea -  [`afac10e`](https://github.com/eea/eea-website-backend/commit/afac10e409bff176ddc198f737bd08bb050db98b)]
+
 ## [6.0.2-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.2-1) - 2023-03-23T18:09:47Z
 
 ### Plone

@@ -5,5 +5,8 @@ eea.dexterity.themes==1.4
 eea.progress.workflow==3.0
 eea.website.policy==2.0
 eea.api.dataconnector==3.4
-moz-sql-parser==4.21.21059
+mo-sql-parsing==9.367.23090
+mo-parsing==8.366.23085
+mo-future==7.340.23006
+mo-dots==9.365.23080
 XlsxWriter==1.2.7

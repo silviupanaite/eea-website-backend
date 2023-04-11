@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.3-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-3) - 2023-04-11T13:28:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.3-2 ~ 6.0.3-3 
+
+##### eeacms/plone-backend:[6.0.3-3](https://github.com/eea/plone-backend/releases/tag/6.0.3-3)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 2.0 ~ 2.1
+
+* Bug fix: RestAPI fix DateTime timezone for ICoreMetadata fields serializer/deserializer
+ [avoinea refs #250368]
+
+### Internal
+
+- chore(CI/CD): Auto-upgrade staging on rancherdev - [valentinab25 -  [`ec745d7`](https://github.com/eea/eea-website-backend/commit/ec745d7b6c2d8e9fc5c7f79b403926c805cf4bdd)]
+
 ## [6.0.3-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-2) - 2023-04-11T09:41:37Z
 
 ### Plone

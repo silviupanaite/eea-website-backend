@@ -5,7 +5,9 @@ pipeline {
     IMAGE_NAME = "eeacms/eea-website-backend"
     GIT_NAME = "eea-website-backend"
     SONARQUBE_TAG = 'www.eea.europa.eu-en'
-    SONARQUBE_TAG_DEMO = 'demo-www.eea.europa.eu'    
+    SONARQUBE_TAG_DEMO = 'demo-www.eea.europa.eu'   
+    RANCHER_STACKID = "1st2567"
+    RANCHER_ENVID = "1a140884"
   }
 
   parameters {
@@ -46,6 +48,21 @@ pipeline {
       }
     }
 
+
+    stage('Upgrade demo ( on tag )') {
+      when {
+        buildingTag()
+      }
+      steps {
+        node(label: 'docker') {
+          withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'Rancher_dev_token', usernameVariable: 'RANCHER_ACCESS', passwordVariable: 'RANCHER_SECRET'],string(credentialsId: 'Rancher_dev_url', variable: 'RANCHER_URL')]) {
+            sh '''wget -O rancher_upgrade.sh https://raw.githubusercontent.com/eea/eea.docker.gitflow/master/src/rancher_upgrade.sh'''
+            sh '''chmod 755 rancher_upgrade.sh'''
+            sh '''./rancher_upgrade.sh'''
+         }
+        }
+      }
+    }
     
 
     stage('Update SonarQube Tags: Prod') {

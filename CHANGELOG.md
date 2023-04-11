@@ -1,6 +1,26 @@
 # Changelog
 
 
+## [6.0.3-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-2) - 2023-04-11T09:41:37Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.3-1 ~ 6.0.3-2 
+
+##### eeacms/plone-backend:[6.0.3-2](https://github.com/eea/plone-backend/releases/tag/6.0.3-2)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 1.7 ~ 2.0
+
+* Bug fix: RestAPI fix DateTime timezone for publication fields serializer/deserializer
+ [avoinea refs #250368]
+* Cleanup: Drop Python2/Plone4 support
+ [avoinea refs #250368]
+
+### Internal
+
+- test(Jenkins): Update tests to Plone 6.0.3 - [Alin Voinea -  [`fe30ada`](https://github.com/eea/eea-website-backend/commit/fe30ada91beb21016b48294a2e8cea6b7d188659)]
+
 ## [6.0.3-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-1) - 2023-04-01T01:32:55Z
 
 ### Plone

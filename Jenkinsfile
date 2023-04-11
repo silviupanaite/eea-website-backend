@@ -8,6 +8,7 @@ pipeline {
     SONARQUBE_TAG_DEMO = 'demo-www.eea.europa.eu'   
     RANCHER_STACKID = "1st2567"
     RANCHER_ENVID = "1a140884"
+    template = "templates/eea-website-backend"
   }
 
   parameters {

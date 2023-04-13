@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.3-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-5) - 2023-04-13T16:43:37Z
+
+### Internal
+
+- Add eea.api.dataconnector to requirements - [Petchesi Iulian -  [`31510e0`](https://github.com/eea/eea-website-backend/commit/31510e0d56b2653910823732ea15c7ecbe348251)]
+
 ## [6.0.3-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-4) - 2023-04-13T12:04:54Z
 
 ### Internal

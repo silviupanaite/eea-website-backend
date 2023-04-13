@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [6.0.3-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-4) - 2023-04-13T12:04:54Z
+
+### Internal
+
+- added eea.api.dataconnector, refs #250426 - [Alexandru Ghica -  [`3e0116a`](https://github.com/eea/eea-website-backend/commit/3e0116a1431ddbe73437becfda2185a22d8b849c)]
+- fixed dependecies, refs #250426 - [Alexandru Ghica -  [`375d14e`](https://github.com/eea/eea-website-backend/commit/375d14e1dc3a68b18c749668e8badf2a45de0ef2)]
+- fix dependencies, refs #250426 - [Alexandru Ghica -  [`d5a456f`](https://github.com/eea/eea-website-backend/commit/d5a456f322eb724eb41cf115110db2e9be6277e0)]
+- updated versions, refs #250426 - [Alexandru Ghica -  [`2974390`](https://github.com/eea/eea-website-backend/commit/29743901ed1cc0524c370fddcff767f9e8bd0080)]
+- pin dependencies, refs #250426 - [Alexandru Ghica -  [`039ffab`](https://github.com/eea/eea-website-backend/commit/039ffabde40803aecf9fdfcf6206d1bf0beb6359)]
+- Add mo-sql-parsing pins + related packages - [Petchesi-Iulian -  [`2625837`](https://github.com/eea/eea-website-backend/commit/2625837e40d724b4983a1d1f934ade7870a19e28)]
+- Change Requirements. - [Petchesi-Iulian -  [`0aa5b5c`](https://github.com/eea/eea-website-backend/commit/0aa5b5c4e836aa72f19b3115dbe07e7fabd2923c)]
+- Cleanup - [Petchesi-Iulian -  [`be8bf6b`](https://github.com/eea/eea-website-backend/commit/be8bf6bbeec44336972a338ee2f7388878edf62b)]
+- Use latest eea.api.dataconnector. - [Petchesi-Iulian -  [`46b9f39`](https://github.com/eea/eea-website-backend/commit/46b9f39341a132f20098b513e803b10b20cc5cf8)]
+
 ## [6.0.3-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-3) - 2023-04-11T13:28:45Z
 
 ### Plone

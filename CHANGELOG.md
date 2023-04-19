@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.0.3-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-6) - 2023-04-19T23:55:39Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.3-3 ~ 6.0.3-4 
+
+##### eeacms/plone-backend:[6.0.3-4](https://github.com/eea/plone-backend/releases/tag/6.0.3-4)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 2.1 ~ 2.2
+
+* Bug fix: restore IVoltoSettings interface
+ [alecghica refs #250564]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 4.0 ~ 4.1
+
+* Change: Use SQLServer parser for queries
+  [iulianpetchesi #250426]
+
+
 ## [6.0.3-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-5) - 2023-04-13T16:43:37Z
 
 ### Internal

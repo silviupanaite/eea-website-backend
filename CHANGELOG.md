@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.0.3-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-9) - 2023-04-26T23:56:32Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.3-5 ~ 6.0.3-6 
+
+##### eeacms/plone-backend:[6.0.3-6](https://github.com/eea/plone-backend/releases/tag/6.0.3-6)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 3.0 ~ 3.1
+
+* Change: Develop refs #250426
+ [alecghica]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 4.2 ~ 4.3
+
+* Fix: fixed profile import for the File content type
+  [alecghica refs #250426]
+
+
 ## [6.0.3-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-7) - 2023-04-25T23:22:38Z
 
 ### Dependency updates

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.3-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-10) - 2023-05-05T16:56:25Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.3-6 ~ 6.0.3-7 
+
+##### eeacms/plone-backend:[6.0.3-7](https://github.com/eea/plone-backend/releases/tag/6.0.3-7)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 4.7 ~ 5.0
+
+* Task: Remove eea.cache dependency from eea.kitkat
+ [iulianpetchesi refs #251471]
+
+
 ## [6.0.3-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-9) - 2023-04-26T23:56:32Z
 
 ### Plone

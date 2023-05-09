@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.3-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-11) - 2023-05-09T23:21:59Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 4.3 ~ 4.4
+
+* Change: add eea core metadata to visualization response
+  [razvanMiu]
+
+### Internal
+
+- Add eea.progress.editing to devel environment - refs #145772 - [Alin Voinea -  [`497b61c`](https://github.com/eea/eea-website-backend/commit/497b61c23af86e023769248d02878a012cbf91f2)]
+- Add status command to dev environment - Makefile - [Alin Voinea -  [`8dbcfaa`](https://github.com/eea/eea-website-backend/commit/8dbcfaacab29281371e8335e5a613c4eee20c98c)]
+- Fix Makefile status command help text - [Alin Voinea -  [`770d704`](https://github.com/eea/eea-website-backend/commit/770d704a3205115b147c6a169670995919694994)]
+
 ## [6.0.3-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-10) - 2023-05-05T16:56:25Z
 
 ### Plone

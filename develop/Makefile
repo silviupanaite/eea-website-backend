@@ -72,6 +72,10 @@ develop:		## Develop source.ini add-ons using mxdev
 	bin/mxdev -c sources.ini
 	bin/pip install -r requirements-mxdev.txt
 
+.PHONY: status
+status: ## Check src/addons for changes
+	./scripts/status.sh
+
 .PHONY: start
 start:			## Start Plone backend
 	bin/runwsgi -v etc/zope.ini

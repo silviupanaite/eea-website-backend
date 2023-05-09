@@ -73,7 +73,7 @@ develop:		## Develop source.ini add-ons using mxdev
 	bin/pip install -r requirements-mxdev.txt
 
 .PHONY: status
-status: ## Check src/addons for changes
+status: 		## Check sources for changes
 	./scripts/status.sh
 
 .PHONY: start

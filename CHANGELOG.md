@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.3-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-12) - 2023-05-17T23:21:53Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 4.4 ~ 4.5
+
+* Bug: updated schema definition
+  [alecghica refs #252894]
+
+
 ## [6.0.3-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.3-11) - 2023-05-09T23:21:59Z
 
 ### Dependency updates

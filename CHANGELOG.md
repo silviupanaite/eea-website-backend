@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.5-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-2) - 2023-05-31T23:57:25Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-1 ~ 6.0.5-2 
+
+##### eeacms/plone-backend:[6.0.5-2](https://github.com/eea/plone-backend/releases/tag/6.0.5-2)
+###### Dependency updates
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 5.0 ~ 6.0
+
+### Internal
+
+- Upgrade dev env to Plone 6.0.5 - [Alin Voinea -  [`c23220b`](https://github.com/eea/eea-website-backend/commit/c23220b2b39b7b4365f02ff37b8e32bce472f03a)]
+- Remove eea.api.taxonomy - [Alin Voinea -  [`c6ced0f`](https://github.com/eea/eea-website-backend/commit/c6ced0fe015d60ddcb1f8e435336e5420c454a18)]
+
 ## [6.0.5-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-1) - 2023-05-30T23:56:27Z
 
 ### Plone

@@ -1,6 +1,7 @@
 collective.volto.subsites
 eea.dexterity.indicators
 eea.dexterity.themes
+eea.progress.editing
 eea.progress.workflow
 eea.website.policy
 eea.api.dataconnector

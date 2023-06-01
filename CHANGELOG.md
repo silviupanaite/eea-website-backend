@@ -1,6 +1,49 @@
 # Changelog
 
 
+## [6.0.5-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-3) - 2023-06-01T17:37:26Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-2 ~ 6.0.5-3 
+
+##### eeacms/plone-backend:[6.0.5-3](https://github.com/eea/plone-backend/releases/tag/6.0.5-3)
+###### Dependency updates
+
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 3.0.1 ~ 3.1
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 6.0 ~ 6.1
+
+* Bug fix: Hide Footer Login action if user is logged-in
+ [avoinea - refs #253198]
+
+###### Internal
+
+- refactor: upgrade collective.taxonomy, remove eea.api.taxonomy - refs #145360 - [Nilesh - [`1cb0dca`](https://github.com/eea/plone-backend/commit/1cb0dcaa15630dba712ee93c6a414e9568d20347)]
+- refactor: upgrade collective.taxonomy, remove eea.api.taxonomy - refs #145360 - [Nilesh - [`344e581`](https://github.com/eea/plone-backend/commit/344e581b4e7877b7257a0cd52af35e352c2378f5)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 5.0 ~ 6.1
+
+* Change: Update Indicator Fixed layout to prepare for Plone 6 migration
+  [avoinea - refs #145772]
+
+* Feature: Plone 6 support
+  [avoinea - refs #145772]
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 2.0 ~ 3.0
+
+* Change: Persist EEA WWW GenericSetup profile
+  [avoinea - refs #145772]
+* Feature: Add dependencies: 
+  eea.progress.editing, eea.api.dataconnector, collective.volto.subsites
+  [avoinea - refs #145772]
+
+### Internal
+
+- Add eea.progress.editing - refs #151690 - [Alin Voinea -  [`c71c2fc`](https://github.com/eea/eea-website-backend/commit/c71c2fc3d46372db8befcb69dc66c4a8df80344e)]
+
 ## [6.0.5-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-2) - 2023-05-31T23:57:25Z
 
 ### Plone

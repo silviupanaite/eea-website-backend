@@ -1,6 +1,26 @@
 # Changelog
 
 
+## [6.0.5-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-5) - 2023-06-09T00:03:15Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-4 ~ 6.0.5-5 
+
+##### eeacms/plone-backend:[6.0.5-5](https://github.com/eea/plone-backend/releases/tag/6.0.5-5)
+###### Internal
+
+- Add cache ENV variables. - [Petchesi-Iulian - [`fa3dac8`](https://github.com/eea/plone-backend/commit/fa3dac81855acc486b473e6e12b406733ab1666b)]
+- Change zodb cache size to 250k - [Petchesi-Iulian - [`fc2808f`](https://github.com/eea/plone-backend/commit/fc2808f9076c1027c1ecbdafed042ed6663b194c)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 6.1 ~ 6.2
+
+* Change: Avoid duplicate urls by removing api substring
+  [iulianpetchesi - refs #157787]
+
+
 ## [6.0.5-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-4) - 2023-06-07T23:23:19Z
 
 ### Plone

@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.5-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-8) - 2023-06-16T23:20:56Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 5.0 ~ 5.1
+
+* Change: feat: include data_provenance with map viz data
+  [razvanMiu]
+
+
 ## [6.0.5-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-7) - 2023-06-13T23:20:43Z
 
 ### Dependency updates

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.5-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-9) - 2023-07-21T23:58:03Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-6 ~ 6.0.5-7 
+
+##### eeacms/plone-backend:[6.0.5-7](https://github.com/eea/plone-backend/releases/tag/6.0.5-7)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 3.1 ~ 3.2
+
+* Bug fix: Object is of wrong type
+ [nileshgulia1 - refs #254921]
+
+
 ## [6.0.5-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-8) - 2023-06-16T23:20:56Z
 
 ### Dependency updates

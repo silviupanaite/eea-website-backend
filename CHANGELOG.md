@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.5-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-11) - 2023-07-25T23:24:04Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 6.2 ~ 7.0
+
+* Refactor: Drop Python2 / Plone 4 support
+  [avoinea - refs #253802]
+
+
 ## [6.0.5-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-10) - 2023-07-24T23:30:05Z
 
 ### Dependency updates

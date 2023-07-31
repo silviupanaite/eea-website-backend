@@ -71,6 +71,14 @@ for item_index, item in enumerate(data):
             summary_parent["data"]["blocks_layout"]["items"].append("1c31c956-5086-476a-8694-9936cfa6c240")
             item["description"] = slate_description
 
+            # Update title block to hide some metadata
+            summary_parent["data"]["blocks"]["ddde07aa-4e48-4475-94bd-e1a517d26eab"].update({
+                "hideContentType": True,
+                "hideCreationDate": True,
+                "hideModificationDate": True,
+                "hideDownloadButton": True
+            })
+
     if "exportimport.versions" in item:
         versions = item['exportimport.versions']
         for version_index in versions:

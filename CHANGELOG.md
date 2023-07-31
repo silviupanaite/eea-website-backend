@@ -1,6 +1,42 @@
 # Changelog
 
 
+## [6.0.5-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-12) - 2023-07-31T13:23:44Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-7 ~ 6.0.5-8 
+
+##### eeacms/plone-backend:[6.0.5-8](https://github.com/eea/plone-backend/releases/tag/6.0.5-8)
+###### Dependency updates
+
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.9 ~ 1.10rc1
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 2.2 ~ 2.3
+
+* Docs: Update sonarqube tags
+ [valipod]
+
+###### Internal
+
+- Release collective.exportimport 1.10rc1 - [Alin Voinea - [`c439fad`](https://github.com/eea/plone-backend/commit/c439fade62d3f594e608bade0b0275936c3f02bf)]
+- Document collective.exportimport custom version pin - [Alin Voinea - [`4551df0`](https://github.com/eea/plone-backend/commit/4551df012e92557100d70e86201ad930969c6014)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 7.0 ~ 7.1
+
+* Bug fix: Fix accordion block allowed blocks
+  [avoinea - refs #145772]
+* Bug fix: dedupe data sources and IMandate basis of urls 
+  [nileshgulia1 - refs #255438]
+
+### Internal
+
+- Add collective.taxonomy and collective.exportimport to develop sources.ini - [Alin Voinea -  [`6701f2e`](https://github.com/eea/eea-website-backend/commit/6701f2e855ed7c4242e07ea7a1a1ed0fb8b01623)]
+- Add relstorage local development environment - [Alin Voinea -  [`2a8d2b5`](https://github.com/eea/eea-website-backend/commit/2a8d2b53fccbc9dc590b3e1a9aab79c57ff21770)]
+- Add script to prepare IMSv4 output json for Plone 6 import - refs #253800 - [Alin Voinea -  [`34fb935`](https://github.com/eea/eea-website-backend/commit/34fb9359190fb2741a6f803d28af63a46b92076d)]
+
 ## [6.0.5-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-11) - 2023-07-25T23:24:04Z
 
 ### Dependency updates

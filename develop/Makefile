@@ -79,7 +79,7 @@ status: 		## Check sources for changes
 
 .PHONY: start
 start:			## Start Plone backend
-	bin/runwsgi -v etc/zope.ini config_file=etc/zope.conf
+	bin/runwsgi -v etc/zope.ini config_file=zope.conf
 
 .PHONY: relstorage
 relstorage:			## Start Plone w/ RelStorage backend

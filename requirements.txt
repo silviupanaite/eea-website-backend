@@ -5,3 +5,4 @@ eea.progress.editing
 eea.progress.workflow
 eea.website.policy
 eea.api.dataconnector
+Products.CMFEditions

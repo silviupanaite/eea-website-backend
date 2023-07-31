@@ -9,3 +9,7 @@ eea.api.dataconnector==5.2
 mo-sql-parsing==9.367.23090
 mo-parsing==8.366.23085
 XlsxWriter==3.0.9
+
+# https://github.com/plone/Products.CMFEditions/pull/101
+# To be removed when Products.CMFEditions 4.0.2 is released
+Products.CMFEditions==4.0.2rc1

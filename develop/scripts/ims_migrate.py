@@ -10,6 +10,8 @@ types_to_replace = {"ims_folder": "landing_page"}
 def replace_host(data_string, the_host):
     data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{the_host}')
     data_string = data_string.replace('https://www.eea.europa.eu/ims', f'{real_host}')
+    data_string = data_string.replace('/api/SITE', '')
+    data_string = data_string.replace('"url": "/ims/station.jpeg"', f'"url": "{real_host}/station.jpeg"')
     return data_string
 
 def replace_datafigure_host(data_string, the_host):

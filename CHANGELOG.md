@@ -1,6 +1,35 @@
 # Changelog
 
 
+## [6.0.5-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-13) - 2023-07-31T23:58:30Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.5-8 ~ 6.0.5-9 
+
+##### eeacms/plone-backend:[6.0.5-9](https://github.com/eea/plone-backend/releases/tag/6.0.5-9)
+###### Dependency updates
+
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.10rc1 ~ 1.10rc2
+
+###### Internal
+
+- Release collective.exportimport==1.10.rc2 - [Alin Voinea - [`18301c5`](https://github.com/eea/plone-backend/commit/18301c553f9915e7d1920b21e513429540db519d)]
+- Container access log: WARN - [Alin Voinea - [`4438caf`](https://github.com/eea/plone-backend/commit/4438caf0bf5d4de89b44b5875817fae5c57d4ee2)]
+
+### Dependency updates
+
+#### New packages
+
+##### [Products.CMFEditions](https://pypi.org/project/Products.CMFEditions/#changelog): 4.0.2rc1
+
+### Internal
+
+- Fix Products.CMFEditions with collective.exportimport - refs #256121 - [Alin Voinea -  [`af86660`](https://github.com/eea/eea-website-backend/commit/af866602c594053009870d34feeccef97568cb71)]
+- ims_migration script: Hide some title block fields - refs #253800 - [Alin Voinea -  [`4e8ee7c`](https://github.com/eea/eea-website-backend/commit/4e8ee7c43832693ff067a6ce5c95e8845d2d902c)]
+- Accesslog level WARN; More IMS output.json fixes - [Alin Voinea -  [`efc4817`](https://github.com/eea/eea-website-backend/commit/efc4817987540db04d5e10cd8b71acb4d8a8fa93)]
+- Fix sources.ini pushurl - [Alin Voinea -  [`b81aa5c`](https://github.com/eea/eea-website-backend/commit/b81aa5c1903837f1f3c8a70a384fc4be5835b976)]
+
 ## [6.0.5-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-12) - 2023-07-31T13:23:44Z
 
 ### Plone

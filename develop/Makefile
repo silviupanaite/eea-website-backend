@@ -78,11 +78,12 @@ status: 		## Check sources for changes
 	./scripts/status.sh
 
 .PHONY: start
-start:			## Start Plone backend
+start:			## Start Plone backend (standalone)
 	bin/runwsgi -v etc/zope.ini config_file=zope.conf
 
 .PHONY: relstorage
-relstorage:			## Start Plone w/ RelStorage backend
+relstorage:		## Start Plone backend (RelStorage/PostgreSQL)
+	docker-compose up -d
 	bin/runwsgi -v etc/zope.ini config_file=relstorage.conf
 
 .PHONY: release

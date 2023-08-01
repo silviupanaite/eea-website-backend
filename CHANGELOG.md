@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.5-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-14) - 2023-08-01T23:22:21Z
+
+### Internal
+
+- chore: Update Makefile relstorage cmd - [Alin Voinea -  [`3ee3d1e`](https://github.com/eea/eea-website-backend/commit/3ee3d1ece5d3076af70895d07a4d511d994ea6ce)]
+
 ## [6.0.5-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-13) - 2023-07-31T23:58:30Z
 
 ### Plone

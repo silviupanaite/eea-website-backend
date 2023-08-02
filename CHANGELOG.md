@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.5-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-15) - 2023-08-02T23:22:27Z
+
+### Internal
+
+- Migrate taxonomy_themes to EEA Core metadata topics field - refs #256153 - [Alin Voinea -  [`793bf17`](https://github.com/eea/eea-website-backend/commit/793bf17c91afdb8424caf7d051f160d3c1d5dd9f)]
+
 ## [6.0.5-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.5-14) - 2023-08-01T23:22:21Z
 
 ### Internal

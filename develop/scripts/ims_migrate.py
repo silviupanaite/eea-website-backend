@@ -4,8 +4,52 @@ host = "https://www.eea.europa.eu/indicators"
 real_host = "https://www.eea.europa.eu/en/analysis/indicators"
 datafigure_host = "https://www.eea.europa.eu/api/SITE"
 
-types_to_replace = {"ims_folder": "landing_page"}
+types_to_replace = {
+    "ims_folder": "landing_page"
+}
 
+topics_to_replace = {
+#   "default": "",
+    "agriculture": "term1",                 # "Agriculture and food",
+    "air": "term2",                         # "Air pollution",
+    "7ngc5c6ofw": "term3",                  # "Bathing water quality",
+    "biodiversity": "term4",                # "Biodiversity",
+    "vr0t7tafrf": "term5",                  # "Bioeconomy",
+    "m6sjg6oyuk": "term6",                  # "Buildings and construction",
+    "6icr2anmn4": "term7",                  # "Chemicals",
+    "qh5021piy3": "term8",                  # "Circular economy",
+    "climate-change-adaptation": "term10",  # "Climate change adaptation",
+    "climate": "term11",                    # "Climate change mitigation",
+    "6vjrx6dm1j": "term13",                 # "Electric vehicles",
+    "energy": "term14",                     # "Energy",
+    "lod55xq213": "term15",                 # "Energy efficiency",
+    "human": "term16",                      # "Environmental health impacts",
+    "vr8719ygoe": "term17",                 # "Environmental inequalities",
+    "8n6i7qsodf": "term18",                 # "Extreme weather",
+    "02sx2jjmd4": "term19",                 # "Fisheries and aquaculture",
+    "esbbbjatw8": "term20",                 # "Forests and forestry",
+    "industry": "term22",                   # "Industry",
+    "landuse": "term23",                    # "Land use",
+    "oyiadbllt7": "term27",                 # "Noise",
+    "7j3ao9vwh6": "term25",                 # "Nature protection and restoration",
+    "sustainability-transitions": "term39", # "Sustainability solutions",
+    "aabl5pvdgv": "term26",                 # "Nature-based solutions",
+    "i87b2jno0c": "term28",                 # "Plastics",
+    "07723e8f6t": "term29",                 # "Pollution",
+    "ifrjqph5cn": "term30",                 # "Production and consumption",
+    "ker3sp99hj": "term31",                 # "Renewable energy",
+    "gcqeu4of1f": "term32",                 # "Resource use and materials",
+    "l3fwryepgj": "term33",                 # "Road transport",
+    "4otlq9kt9v": "term34",                 # "Seas and coasts",
+    "soil": "term35",                       # "Soil",
+    "x5o5fkk4xy": "term38",                 # "Sustainability challenges",
+    "4g6nof0mwk": "term40",                 # "Sustainable finance",
+    "gvnhkc6kx7": "term41",                 # "Textiles",
+    "transport": "term42",                  # "Transport and mobility",
+    "himvkjl0ok": "term43",                 # "Urban sustainability",
+    "waste": "term44",                      # "Waste and recycling",
+    "water": "term45",                      # "Water",
+}
 
 def replace_host(data_string, the_host):
     data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{the_host}')
@@ -23,6 +67,17 @@ def replace_type(item, types):
     for type in types:
         if item["@type"] == type:
             item["@type"] = types[type]
+
+def replace_topics(item):
+    item['topics'] = []
+    if item.get('taxonomy_themes', None) is None:
+        return
+    for theme in item['taxonomy_themes']:
+        # Unkown themes are not migrated
+        if theme in ["default", "natural"]:
+            continue
+        item['topics'].append(topics_to_replace[theme])
+    del item['taxonomy_themes']
 
 
 def get_summary_block(blocks, parents=[]):
@@ -50,6 +105,7 @@ data = json.loads(data)
 
 for item_index, item in enumerate(data):
     replace_type(item, types_to_replace)
+    replace_topics(item)
     
     if "blocks" in item:
         blocks = item["blocks"]

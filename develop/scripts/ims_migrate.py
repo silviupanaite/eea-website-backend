@@ -53,6 +53,8 @@ topics_to_replace = {
 
 def replace_host(data_string, the_host):
     data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{the_host}')
+    data_string = data_string.replace('"id": "taxonomy_themes"', '"id": "topics"')
+    data_string = data_string.replace('"i": "taxonomy_themes"', '"i": "topics"')
     data_string = data_string.replace('https://www.eea.europa.eu/ims', f'{real_host}')
     data_string = data_string.replace('/api/SITE', '')
     data_string = data_string.replace('"url": "/ims/station.jpeg"', f'"url": "{real_host}/station.jpeg"')
@@ -94,6 +96,39 @@ def get_summary_block(blocks, parents=[]):
             )
     return summary_block
 
+def fix_landing_page(item):
+    if item['@type'] != 'landing_page':
+        return
+
+    for block in item['blocks'].values():
+        if block['@type'] != 'accordion':
+            continue
+
+        for pane in block['data']['blocks'].values():
+            if pane['@type'] != 'accordionPanel':
+                continue
+
+            for listing in pane['blocks'].values():
+                if listing['@type'] != 'listing':
+                    continue
+
+                for q in listing['query']:
+                    if q["i"] != 'topics':
+                        continue
+
+                    v = []
+                    for k in q['v']:
+                        v.append(topics_to_replace[k])
+                    q['v'] = v
+
+                for q in listing['querystring']['query']:
+                    if q["i"] != 'topics':
+                        continue
+
+                    v = []
+                    for k in q['v']:
+                        v.append(topics_to_replace[k])
+                    q['v'] = v
 
 # Opening JSON file
 f = open("./ims.json")
@@ -106,7 +141,8 @@ data = json.loads(data)
 for item_index, item in enumerate(data):
     replace_type(item, types_to_replace)
     replace_topics(item)
-    
+    fix_landing_page(item)
+
     if "blocks" in item:
         blocks = item["blocks"]
         summary_parent = item["blocks"]
@@ -129,6 +165,16 @@ for item_index, item in enumerate(data):
             summary_parent["data"]["blocks_layout"]["items"].append("1c31c956-5086-476a-8694-9936cfa6c240")
             item["description"] = slate_description
 
+            # Drop obsolete blocks
+            # Splitter
+            del summary_parent["data"]["blocks"]['9f452ca7-172a-42e0-a699-8df0714c89f8']
+            summary_parent["data"]["blocks_layout"]["items"].remove('9f452ca7-172a-42e0-a699-8df0714c89f8')
+
+            # Old Summary
+            del summary_parent["data"]["blocks"]["ca212ba0-859e-4e67-b610-debe0d498b74"]
+            summary_parent["data"]["blocks_layout"]["items"].remove("ca212ba0-859e-4e67-b610-debe0d498b74")
+
+
             # Update title block to hide some metadata
             summary_parent["data"]["blocks"]["ddde07aa-4e48-4475-94bd-e1a517d26eab"].update({
                 "hideContentType": True,
@@ -147,7 +193,7 @@ for item_index, item in enumerate(data):
             if "blocks" in version:
                 blocks = version["blocks"]
                 summary_parent = version["blocks"]
-                
+
                 summary = get_summary_block(blocks, [])
 
 

@@ -84,6 +84,28 @@ def replace_topics(item):
         item['topics'].append(topics_to_replace[theme])
     del item['taxonomy_themes']
 
+def remove_institutional_mandate(item):
+    if item['@type'] != 'ims_indicator':
+        return
+
+    del item['institutional_mandate']
+
+    for block in item.get("blocks", {}).values():
+        if block.get("@type", None) != "accordion":
+            continue
+
+        fields = block.get(
+            "data", {}).get(
+            "blocks", {}).get(
+            "546a7c35-9188-4d23-94ee-005d97c26f2b", {}).get(
+            "blocks", {}).get(
+            "b5381428-5cae-4199-9ca8-b2e5fa4677d9", {}).get(
+            "fields", [])
+
+        for idx, field in enumerate(fields):
+            if field.get('field', {}).get("id", None) == 'institutional_mandate':
+                fields.pop(idx)
+                break
 
 def get_summary_block(blocks, parents=[]):
     summary_block = None
@@ -145,6 +167,7 @@ for item_index, item in enumerate(data):
     replace_type(item, types_to_replace)
     replace_topics(item)
     fix_landing_page(item)
+    remove_institutional_mandate(item)
 
     if "blocks" in item:
         blocks = item["blocks"]

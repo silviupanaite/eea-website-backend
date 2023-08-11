@@ -55,6 +55,7 @@ topics_to_replace = {
 def replace_host(data_string, the_host):
     data_string = data_string.replace(debug_instance, "https://www.eea.europa.eu")
     data_string = data_string.replace('"ims"', '"indicators"')
+    data_string = data_string.replace("customSummaryVariationId", "default")
     data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{the_host}')
     data_string = data_string.replace('"id": "taxonomy_themes"', '"id": "topics"')
     data_string = data_string.replace('"i": "taxonomy_themes"', '"i": "topics"')
@@ -138,6 +139,10 @@ def fix_landing_page(item):
                     continue
 
                 for q in listing['query']:
+                    if q["i"] in ['portal_type', 'review_state']:
+                        q['o'] = "plone.app.querystring.operation.selection.any"
+                        continue
+
                     if q["i"] != 'topics':
                         continue
 
@@ -147,6 +152,10 @@ def fix_landing_page(item):
                     q['v'] = v
 
                 for q in listing['querystring']['query']:
+                    if q["i"] in ['portal_type', 'review_state']:
+                        q['o'] = "plone.app.querystring.operation.selection.any"
+                        continue
+
                     if q["i"] != 'topics':
                         continue
 

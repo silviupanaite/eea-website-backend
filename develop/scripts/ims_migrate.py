@@ -219,9 +219,19 @@ for item_index, item in enumerate(data):
             })
 
     if "exportimport.versions" in item:
+        oid = item['@id']
+        short_id = item['id']
         versions = item['exportimport.versions']
         for version_index in versions:
             version = versions[version_index]
+
+            # Refs https://taskman.eionet.europa.eu/issues/253799#note-12
+            vid = version['@id']
+            if vid != oid:
+                version['@id'] = oid
+            ver_id = version['id']
+            if ver_id != short_id:
+                version['id'] = short_id
 
             replace_type(version, types_to_replace)
 

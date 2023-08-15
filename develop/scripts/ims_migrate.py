@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
+""" Usage:
+
+    python3 ims_migrate.py <input_file> <output_file>
+
+"""
 import json
+import sys
+from uuid import uuid4
+
 debug_instance = "http://10.120.10.133:63954/www/SITE"
 host = "https://www.eea.europa.eu/indicators"
 real_host = "https://www.eea.europa.eu/en/analysis/indicators"
@@ -52,29 +60,28 @@ topics_to_replace = {
     "water": "term45",                      # "Water",
 }
 
-def replace_host(data_string, the_host):
+def cleanup(data_string):
     data_string = data_string.replace(debug_instance, "https://www.eea.europa.eu")
     data_string = data_string.replace('"ims"', '"indicators"')
     data_string = data_string.replace("customSummaryVariationId", "default")
-    data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{the_host}')
+    data_string = data_string.replace('"@id": "https://www.eea.europa.eu/ims', f'"@id": "{host}')
     data_string = data_string.replace('"id": "taxonomy_themes"', '"id": "topics"')
     data_string = data_string.replace('"i": "taxonomy_themes"', '"i": "topics"')
     data_string = data_string.replace('https://www.eea.europa.eu/ims', f'{real_host}')
     data_string = data_string.replace('/api/SITE', '')
-    data_string = data_string.replace('"url": "/ims/station.jpeg"', f'"url": "{real_host}/station.jpeg"')
+    data_string = data_string.replace('"url": "/ims/station.jpeg"', '"url": "/en/analysis/indicators/station.jpeg"')
+    data_string = data_string.replace('"/data-and-maps/', '"https://www.eea.europa.eu/data-and-maps/')
+    data_string = data_string.replace(datafigure_host, "https://www.eea.europa.eu")
     return data_string
 
-def replace_datafigure_host(data_string, the_host):
-    data_string = data_string.replace("https://www.eea.europa.eu/api/SITE", the_host)
-    return data_string
-
-
-def replace_type(item, types):
-    for type in types:
+def replace_type(item):
+    """ Replace type """
+    for type in types_to_replace:
         if item["@type"] == type:
-            item["@type"] = types[type]
+            item["@type"] = types_to_replace[type]
 
 def replace_topics(item):
+    """ Replace taxonomy_themes to topics """
     item['topics'] = []
     if item.get('taxonomy_themes', None) is None:
         return
@@ -85,11 +92,14 @@ def replace_topics(item):
         item['topics'].append(topics_to_replace[theme])
     del item['taxonomy_themes']
 
-def remove_institutional_mandate(item):
+def remove_obsolete_fields(item):
+    """ Remove obsolete fields: institutional_mandate and data_provenance
+    """
     if item['@type'] != 'ims_indicator':
         return
 
     del item['institutional_mandate']
+    del item['data_provenance']
 
     for block in item.get("blocks", {}).values():
         if block.get("@type", None) != "accordion":
@@ -108,6 +118,10 @@ def remove_institutional_mandate(item):
                 fields.pop(idx)
                 break
 
+            # Also handle data_provenance
+            if field.get('field', {}).get("id", None) == 'data_provenance':
+                field['field']['widget'] = 'data_provenance'
+
 def get_summary_block(blocks, parents=[]):
     summary_block = None
     for block_id in blocks:
@@ -123,7 +137,7 @@ def get_summary_block(blocks, parents=[]):
     return summary_block
 
 def fix_landing_page(item):
-    if item['@type'] != 'landing_page':
+    if item['@type'] != 'ims_folder':
         return
 
     for block in item['blocks'].values():
@@ -164,100 +178,143 @@ def fix_landing_page(item):
                         v.append(topics_to_replace[k])
                     q['v'] = v
 
-# Opening JSON file
-f = open("./ims.json")
+def fix_summary_and_title(item):
+    """ Fix summary and title blocks
+    """
+    if 'blocks' not in item:
+        return
 
-data = f.read()
-data = replace_host(data, host)
-data = replace_datafigure_host(data, datafigure_host)
-data = json.loads(data)
+    blocks = item["blocks"]
+    summary_parent = item["blocks"]
+    summary = get_summary_block(blocks, [])
 
-for item_index, item in enumerate(data):
-    replace_type(item, types_to_replace)
-    replace_topics(item)
-    fix_landing_page(item)
-    remove_institutional_mandate(item)
+    if summary and summary[0] and summary[1]:
+        for sid in summary[0]:
+            if sid in blocks:
+                summary_parent = blocks[sid]
+            else:
+                summary_parent = summary_parent["data"]["blocks"][sid]
 
-    if "blocks" in item:
-        blocks = item["blocks"]
-        summary_parent = item["blocks"]
-        summary = get_summary_block(blocks, [])
+        slate_id = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks_layout"]["items"][0]
+        slate_value = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks"][slate_id]['value']
+        slate_description = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks"][slate_id]['plaintext']
+        summary_parent["data"]["blocks"]["1c31c956-5086-476a-8694-9936cfa6c240"] = {
+            "@type": "description",
+            "value": slate_value,
+        }
+        summary_parent["data"]["blocks_layout"]["items"].append("1c31c956-5086-476a-8694-9936cfa6c240")
+        item["description"] = slate_description
 
-        if summary and summary[0] and summary[1]:
-            for index, sid in enumerate(summary[0]):
-                if sid in blocks:
-                    summary_parent = blocks[sid]
-                else:
-                    summary_parent = summary_parent["data"]["blocks"][sid]
+        # Drop obsolete blocks
+        # Splitter
+        del summary_parent["data"]["blocks"]['9f452ca7-172a-42e0-a699-8df0714c89f8']
+        summary_parent["data"]["blocks_layout"]["items"].remove('9f452ca7-172a-42e0-a699-8df0714c89f8')
 
-            slate_id = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks_layout"]["items"][0]
-            slate_value = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks"][slate_id]['value']
-            slate_description = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks"][slate_id]['plaintext']
-            summary_parent["data"]["blocks"]["1c31c956-5086-476a-8694-9936cfa6c240"] = {
-                "@type": "description",
-                "value": slate_value,
-            }
-            summary_parent["data"]["blocks_layout"]["items"].append("1c31c956-5086-476a-8694-9936cfa6c240")
-            item["description"] = slate_description
+        # Old Summary
+        del summary_parent["data"]["blocks"]["ca212ba0-859e-4e67-b610-debe0d498b74"]
+        summary_parent["data"]["blocks_layout"]["items"].remove("ca212ba0-859e-4e67-b610-debe0d498b74")
 
-            # Drop obsolete blocks
-            # Splitter
-            del summary_parent["data"]["blocks"]['9f452ca7-172a-42e0-a699-8df0714c89f8']
-            summary_parent["data"]["blocks_layout"]["items"].remove('9f452ca7-172a-42e0-a699-8df0714c89f8')
+        # Update title block to hide some metadata
+        summary_parent["data"]["blocks"]["ddde07aa-4e48-4475-94bd-e1a517d26eab"].update({
+            "hideContentType": True,
+            "hideCreationDate": True,
+            "hideModificationDate": True,
+            "hideDownloadButton": True
+        })
 
-            # Old Summary
-            del summary_parent["data"]["blocks"]["ca212ba0-859e-4e67-b610-debe0d498b74"]
-            summary_parent["data"]["blocks_layout"]["items"].remove("ca212ba0-859e-4e67-b610-debe0d498b74")
+def fix_version_id(item, version):
+    oid = item['@id']
+    short_id = item['id']
+    # Refs https://taskman.eionet.europa.eu/issues/253799#note-12
+    # Fix version id and @id
+    vid = version['@id']
+    if vid != oid:
+        version['@id'] = oid
+    ver_id = version['id']
+    if ver_id != short_id:
+        version['id'] = short_id
 
+def fix_data_provenance(item):
+    if 'blocks' not in item:
+        return
 
-            # Update title block to hide some metadata
-            summary_parent["data"]["blocks"]["ddde07aa-4e48-4475-94bd-e1a517d26eab"].update({
-                "hideContentType": True,
-                "hideCreationDate": True,
-                "hideModificationDate": True,
-                "hideDownloadButton": True
-            })
+    for section in item.get('blocks').values():
+        for block in section.get('data', {}).get('blocks', {}).values():
+            if block.get('@type') != 'dataFigure':
+                continue
 
-    if "exportimport.versions" in item:
-        oid = item['@id']
-        short_id = item['id']
-        versions = item['exportimport.versions']
-        for version_index in versions:
-            version = versions[version_index]
+            existing = set([])
+            data_provenance = {"data": []}
+            metadata = block.get('metadata', {})
+            dataSources = metadata.get('dataSources', {}).get("value", [])
 
-            # Refs https://taskman.eionet.europa.eu/issues/253799#note-12
-            vid = version['@id']
-            if vid != oid:
-                version['@id'] = oid
-            ver_id = version['id']
-            if ver_id != short_id:
-                version['id'] = short_id
+            for child in dataSources:
+                items = child.get("children", [])
+                for item in items:
+                    link = item.get("data", {}).get("link", {}).get("external", {}).get("external_link", "")
+                    if not link:
+                        continue
+                    link = link.strip("/").strip("/view")
+                    if link in existing:
+                        continue
 
-            replace_type(version, types_to_replace)
+                    existing.add(link)
+                    text  = item.get("children", [])
+                    title = ""
+                    for t in text:
+                        title = t.get("text", "")
+                        if title:
+                            break
+                    data_provenance["data"].append({
+                        "@id": f"{uuid4()}",
+                        "link": link,
+                        "title": title,
+                        "organization": "",
+                    })
 
-            if "blocks" in version:
-                blocks = version["blocks"]
-                summary_parent = version["blocks"]
+            if data_provenance["data"]:
+                block["data_provenance"] = data_provenance
 
-                summary = get_summary_block(blocks, [])
+            # Clenup obsolete dataSources
+            if "dataSources" in metadata:
+                del metadata["dataSources"]
 
+            # Cleanup also obsolte institutionalMandate
+            if "institutionalMandate" in metadata:
+                del metadata["institutionalMandate"]
 
-                if summary and summary[0] and summary[1]:
-                    for index, sid in enumerate(summary[0]):
-                        if sid in blocks:
-                            summary_parent = blocks[sid]
-                        else:
-                            summary_parent = summary_parent["data"]["blocks"][sid]
-                    slate_id = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks_layout"]["items"][0]
-                    slate_value = summary_parent["data"]["blocks"][summary[1]]["data"]["blocks"][slate_id]['value']
-                    summary_parent["data"]["blocks"]["1c31c956-5086-476a-8694-9936cfa6c240"] = {
-                        "@type": "description",
-                        "value": slate_value,
-                    }
-                    summary_parent["data"]["blocks_layout"]["items"].append("1c31c956-5086-476a-8694-9936cfa6c240")
+def update(data):
+    """ Migrate IMS data to Plone 6
+    """
+    for item in data:
+        fix_landing_page(item)
+        replace_type(item)
+        replace_topics(item)
+        remove_obsolete_fields(item)
+        fix_summary_and_title(item)
+        fix_data_provenance(item)
 
-with open("./output.json", "w") as outfile:
-    json.dump(data, outfile, indent = 2)
+        for version in item.get('exportimport.versions', {}).values():
+            fix_version_id(item, version)
+            replace_type(version)
+            replace_topics(version)
+            remove_obsolete_fields(version)
+            fix_summary_and_title(version)
+            fix_data_provenance(version)
 
-# Closing JSON file
-f.close()
+def main(inp, out):
+    data = {}
+    # Read input file
+    with open(inp) as f:
+        json_data = cleanup(f.read())
+        data = json.loads(json_data)
+        update(data)
+
+    # Write output file
+    with open(out, "w") as ofile:
+        json.dump(data, ofile, indent=2)
+
+if __name__ == "__main__":
+    inp = sys.argv[1] if len(sys.argv) > 1 else "./ims.json"
+    out = sys.argv[2] if len(sys.argv) > 2 else "./output.json"
+    main(inp, out)

@@ -1,6 +1,7 @@
 bin/
 constraints-mxdev.txt
 include/
+__pycache__/
 inituser
 lib/
 lib64

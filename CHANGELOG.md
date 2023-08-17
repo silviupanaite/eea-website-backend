@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.6-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-2) - 2023-08-17T23:29:59Z
+
+### Internal
+
+- feat: IMS migration fix links and data_provenance organisations - refs #256556 - [Alin Voinea -  [`b51912f`](https://github.com/eea/eea-website-backend/commit/b51912f303e523d4fae7b3def997b06c6fbe7dce)]
+
 ## [6.0.6-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-1) - 2023-08-16T23:28:47Z
 
 ### Plone

@@ -4,5 +4,6 @@ eea.dexterity.themes
 eea.progress.editing
 eea.progress.workflow
 eea.website.policy
+eea.stringinterp
 eea.api.dataconnector
 Products.CMFEditions

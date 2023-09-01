@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.6-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-7) - 2023-09-01T12:02:09Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.0 ~ 9.1
+
+* Change: Bug fix: Enable / Disable Discussion Content Rule [avoinea - refs #256563]
+  [avoinea]
+
+
 ## [6.0.6-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-6) - 2023-09-01T00:06:45Z
 
 ### Plone

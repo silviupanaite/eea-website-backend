@@ -1,6 +1,31 @@
 # Changelog
 
 
+## [6.0.6-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-6) - 2023-09-01T00:06:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.6-4 ~ 6.0.6-5 
+
+##### eeacms/plone-backend:[6.0.6-5](https://github.com/eea/plone-backend/releases/tag/6.0.6-5)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 3.0 ~ 3.1
+
+* Change: Feature: Add content rule to unset publication date when private [dobri1408 - refs #147278]
+ [avoinea]
+
+### Dependency updates
+
+#### New packages
+
+##### [eea.stringinterp](https://github.com/eea/eea.stringinterp): 1.1
+
+### Internal
+
+- chore: Upgrade dev environment to Plone 6.0.6 - [Alin Voinea -  [`0e13e66`](https://github.com/eea/eea-website-backend/commit/0e13e66edbcf4f860cac5a34a2abd837cf51ef12)]
+- Release eea.stringinterp 1.1 - refs #256563 - [Alin Voinea -  [`8905434`](https://github.com/eea/eea-website-backend/commit/8905434854e980c6ccdd7b7f2f2446b2b0668e9e)]
+
 ## [6.0.6-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-5) - 2023-08-31T00:12:49Z
 
 ### Plone

@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.6-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-8) - 2023-09-06T23:32:06Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.1 ~ 9.2
+
+* Feature: Add custom Content Rule action for creating new indicator version
+  [avoinea - refs #257513]
+
+
 ## [6.0.6-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-7) - 2023-09-01T12:02:09Z
 
 ### Dependency updates

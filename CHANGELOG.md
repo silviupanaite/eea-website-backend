@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.6-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-9) - 2023-09-20T23:30:31Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 5.2 ~ 5.3
+
+* Change: Add ElasticConnector CT
+  [andreiggr]
+
+Pre-release with the elastic connector
+
+
 ## [6.0.6-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-8) - 2023-09-06T23:32:06Z
 
 ### Dependency updates

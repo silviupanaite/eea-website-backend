@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.6-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-11) - 2023-09-28T23:36:48Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 6.0 ~ 6.1
+
+* Change: Make figure note available for embed blocks
+  [andreiggr]
+
+
 ## [6.0.6-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-10) - 2023-09-27T23:39:33Z
 
 ### Dependency updates

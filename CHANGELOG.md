@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.6-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-12) - 2023-10-06T23:22:24Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 6.1 ~ 6.2
+
+* Change: elasticconnectors support second level aggregations
+  [andreiggr]
+
+
 ## [6.0.6-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.6-11) - 2023-09-28T23:36:48Z
 
 ### Dependency updates

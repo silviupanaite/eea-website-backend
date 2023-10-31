@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-3) - 2023-10-31T00:16:23Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.3 ~ 9.4
+
+* Feature: Custom Indicator @indexers for data_provenance and temportal_coverage
+  [dobri1408 - refs #258077]
+
+
 ## [6.0.7-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-2) - 2023-10-19T23:42:45Z
 
 ### Plone

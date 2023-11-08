@@ -33,7 +33,7 @@ Optionally set default `python3`:
 
 ### Mac OS
 
-    brew install zlib git readline jpeg libpng libyaml
+    brew install zlib git readline jpeg libpng libyaml postgresql
 
 
 ## Install
@@ -47,7 +47,7 @@ In order to develop Plone 6 backend add-ons run:
 
 To use other **Python** version run make with `-e` parameter:
 
-    make -e PYTHON=python3.9
+    make -e PYTHON=python3.10
     make start
 
 

@@ -83,7 +83,7 @@ start:			## Start Plone backend (standalone)
 
 .PHONY: relstorage
 relstorage:		## Start Plone backend (RelStorage/PostgreSQL)
-	docker-compose up -d
+	docker compose up -d
 	bin/runwsgi -v etc/zope.ini config_file=relstorage.conf
 
 .PHONY: release

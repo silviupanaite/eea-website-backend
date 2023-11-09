@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.7-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-5) - 2023-11-09T00:16:19Z
+
+### Internal
+
+- fix: Development environment on Mac - [Alin Voinea -  [`259b9aa`](https://github.com/eea/eea-website-backend/commit/259b9aa6034799017dbf504992b3de95c619b6d1)]
+
 ## [6.0.7-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-4) - 2023-11-02T00:23:05Z
 
 ### Dependency updates

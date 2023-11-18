@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-6) - 2023-11-18T00:15:10Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 6.3 ~ 7.0
+
+* Change: feat: serialize embed_visualization and new embed_map
+  [razvanMiu]
+
+
 ## [6.0.7-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-5) - 2023-11-09T00:16:19Z
 
 ### Internal

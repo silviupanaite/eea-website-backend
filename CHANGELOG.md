@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.0.7-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-8) - 2023-11-25T00:17:48Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://pypi.org/project/eea.api.dataconnector/#changelog): 8.0 ~ 8.1
+
+
 ## [6.0.7-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-7) - 2023-11-24T00:16:26Z
 
 ### Dependency updates

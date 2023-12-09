@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-10) - 2023-12-09T00:16:34Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 8.2 ~ 8.3
+
+* Change: fix - default values
+  [claudiaifrim]
+
+
 ## [6.0.7-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-9) - 2023-12-08T00:17:04Z
 
 ### Dependency updates

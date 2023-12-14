@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-11) - 2023-12-14T00:17:27Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.4 ~ 9.5
+
+* Feature: Custom add permissions for IMS Indicator content-type
+  [avoinea - refs #259400]
+
+
 ## [6.0.7-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-10) - 2023-12-09T00:16:34Z
 
 ### Dependency updates

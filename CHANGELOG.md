@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-12) - 2023-12-15T12:29:21Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 8.3 ~ 8.4
+
+* Bug fix: Add upgrade step to fix plotly with BOM character ﻿
+  [avoinea - refs #262155]
+
+
 ## [6.0.7-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-11) - 2023-12-14T00:17:27Z
 
 ### Dependency updates

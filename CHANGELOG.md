@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-14) - 2024-01-11T00:15:28Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 8.4 ~ 8.5
+
+* Change: fix: don't break visualizations if selected content is not a viz
+  [razvanMiu]
+
+
 ## [6.0.7-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-13) - 2024-01-10T00:44:16Z
 
 ### Plone

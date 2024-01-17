@@ -77,6 +77,10 @@ develop:		## Develop source.ini add-ons using mxdev
 status: 		## Check sources for changes
 	./scripts/status.sh
 
+.PHONY: pull
+pull:			## Pull sources from git
+	./scripts/pull.sh
+
 .PHONY: start
 start:			## Start Plone backend (standalone)
 	bin/runwsgi -v etc/zope.ini config_file=zope.conf

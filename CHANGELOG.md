@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.7-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-15) - 2024-01-18T00:15:40Z
+
+### Internal
+
+- chore: Add make pull - [Alin Voinea -  [`847cd87`](https://github.com/eea/eea-website-backend/commit/847cd8793522db94dd42089fd60b474392a2a054)]
+
 ## [6.0.7-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-14) - 2024-01-11T00:15:28Z
 
 ### Dependency updates

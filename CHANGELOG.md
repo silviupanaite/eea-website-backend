@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.7-16](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-16) - 2024-01-18T16:37:01Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 8.5 ~ 9.0
+
+* Change: feat: improve plotlychart visualization serialization
+  [razvanMiu]
+
+
 ## [6.0.7-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.7-15) - 2024-01-18T00:15:40Z
 
 ### Internal

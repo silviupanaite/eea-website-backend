@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.9-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-2) - 2024-02-09T00:15:53Z
+
+### Internal
+
+- chore: Update develop Makefile to Plone 6.0.9 - [alin -  [`5b74543`](https://github.com/eea/eea-website-backend/commit/5b74543f4280bb5224ab0bcec9e0538fb5761f9d)]
+
 ## [6.0.9-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-1) - 2024-02-06T16:50:13Z
 
 ### Plone

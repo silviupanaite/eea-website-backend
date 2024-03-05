@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.9-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-4) - 2024-03-05T00:16:29Z
+
+### Internal
+
+- docs: Update python requirements - [alin -  [`e76b2fc`](https://github.com/eea/eea-website-backend/commit/e76b2fcaebbf6a8297fa7d46767e831c613e673b)]
+
 ## [6.0.9-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-3) - 2024-02-29T00:45:04Z
 
 ### Plone

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.9-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-5) - 2024-03-06T00:44:59Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.9-2 ~ 6.0.9-3 
+
+##### eeacms/plone-backend:[6.0.9-3](https://github.com/eea/plone-backend/releases/tag/6.0.9-3)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 3.4 ~ 3.5
+
+* Feature: Expose rights field as metadata
+ [dobri1408 - refs #159551]
+
+
 ## [6.0.9-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-4) - 2024-03-05T00:16:29Z
 
 ### Internal

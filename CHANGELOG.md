@@ -1,6 +1,42 @@
 # Changelog
 
 
+## [6.0.10-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.10-1) - 2024-03-15T17:59:27Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.9-4 ~ 6.0.10-1 
+
+##### eeacms/plone-backend:[6.0.10-1](https://github.com/eea/plone-backend/releases/tag/6.0.10-1)
+###### Plone
+
+###### Upgrade 6.0.9 ~ 6.0.10 
+
+* Plone [6.0.10](https://plone.org/download/releases/6.0.10)
+
+###### Dependency updates
+
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.10 ~ 1.12
+
+###### [dnspython](https://pypi.org/project/dnspython/#changelog): 2.5.0 ~ 2.6.1
+
+###### [elasticsearch](https://pypi.org/project/elasticsearch/#changelog): 8.12.0 ~ 8.12.1
+
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.35.1 ~ 0.35.2
+
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 1.40.1 ~ 1.42.0
+
+###### [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 5.0.0a1 ~ 5.0.0a2
+
+###### Internal
+
+- Release 6.0.10 - [alin - [`c410bf6`](https://github.com/eea/plone-backend/commit/c410bf63cbbda3b021dfa63ade3e5a1574852c80)]
+
+### Internal
+
+- Add eea.api.controlpanel to sources.ini - [alin -  [`e2606f0`](https://github.com/eea/eea-website-backend/commit/e2606f0eecaed3d222a55428f471715a6b0cab50)]
+- chore: Upgrade development env to Plone 6.0.10 - [alin -  [`bd001b7`](https://github.com/eea/eea-website-backend/commit/bd001b7f3f7681966791060a0927107e52d5546d)]
+
 ## [6.0.9-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.9-5) - 2024-03-06T00:44:59Z
 
 ### Plone

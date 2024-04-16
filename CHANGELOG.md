@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [6.0.10-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.10-7) - 2024-04-16T23:46:11Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.10-6 ~ 6.0.10-7 
+
+##### eeacms/plone-backend:[6.0.10-7](https://github.com/eea/plone-backend/releases/tag/6.0.10-7)
+###### Dependency updates
+
+###### [eea.api.glossary](https://pypi.org/project/eea.api.glossary/#changelog): 1.1 ~ 1.2
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.5 ~ 9.6
+
+* Refactor: Remove contact email metadata from Indicator content-type layout
+  [avoinea - refs #268179]
+
+
 ## [6.0.10-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.10-6) - 2024-04-09T23:47:54Z
 
 ### Plone

@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.11-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-2) - 2024-05-22T23:16:13Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.6 ~ 9.7
+
+* Refactor: Remove "Consultation members emails" from Indicator schema
+  [avoinea - refs #266991]
+
+
 ## [6.0.11-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-1) - 2024-05-20T23:48:22Z
 
 ### Plone

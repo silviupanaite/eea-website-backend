@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.11-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-4) - 2024-05-28T23:17:51Z
+
+### Internal
+
+- chore: Update dev environment to python3.11 / Plone 6.0.11 - [alin -  [`560e98f`](https://github.com/eea/eea-website-backend/commit/560e98ff6f7253d8b4e71749f90568943fef045a)]
+
 ## [6.0.11-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-3) - 2024-05-23T23:49:08Z
 
 ### Plone

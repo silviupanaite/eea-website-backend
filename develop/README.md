@@ -22,14 +22,14 @@ Trainings on how to create your own website using Plone 6 is available as part o
 
 ### Ubuntu / Debian / Windows Bash
 
-**Note** If you already have a higher version of python on your system, replace **python3.10** with your installed version bellow
+**Note** If you already have a higher version of python on your system, replace **python3.11** with your installed version bellow
 
     apt update
-    apt install python3-venv python3.10-dev python3.10-venv libpq-dev libldap2-dev libsasl2-dev git make gcc
+    apt install python3.11-venv python3.11-dev libpq-dev libldap2-dev libsasl2-dev git make gcc
 
 Optionally set default `python3`:
 
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
 
 ### Mac OS
 

@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.11-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-8) - 2024-06-19T23:48:46Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.11-5 ~ 6.0.11-6 
+
+##### eeacms/plone-backend:[6.0.11-6](https://github.com/eea/plone-backend/releases/tag/6.0.11-6)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 3.7 ~ 3.8
+
+* Change: Release
+ [avoinea]
+
+
 ## [6.0.11-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-7) - 2024-06-17T23:46:12Z
 
 ### Plone

@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.11-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-13) - 2024-08-05T23:18:13Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.7 ~ 9.8
+
+* Change: Update interfaces.py to include dividers as default layout - refs 266147
+  [avoinea]
+
+
 ## [6.0.11-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-12) - 2024-07-31T23:49:18Z
 
 ### Plone

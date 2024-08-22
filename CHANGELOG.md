@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.11-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-15) - 2024-08-22T23:24:20Z
+
+### Internal
+
+- fix: Develop python3.11, gcc 13 - [Alin V -  [`755f8b1`](https://github.com/eea/eea-website-backend/commit/755f8b1c5704a874d7387f4f43ca2379a2a8f865)]
+
 ## [6.0.11-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-14) - 2024-08-19T23:50:36Z
 
 ### Plone

@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.11-16](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-16) - 2024-08-24T00:09:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.11-11 ~ 6.0.11-12 
+
+##### eeacms/plone-backend:[6.0.11-12](https://github.com/eea/plone-backend/releases/tag/6.0.11-12)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 5.2 ~ 5.3
+
+* Change: Develop
+ [tiberiuichim]
+
+### Internal
+
+- chore: Fix psycopg2 version for dev environments - [Alin Voinea -  [`b05a1a4`](https://github.com/eea/eea-website-backend/commit/b05a1a47a4de3c930e496b074ecf1278fd56afd6)]
+
 ## [6.0.11-15](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-15) - 2024-08-22T23:24:20Z
 
 ### Internal

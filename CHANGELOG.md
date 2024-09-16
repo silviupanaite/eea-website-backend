@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.11-17](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-17) - 2024-09-16T23:16:14Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 10.3 ~ 10.4
+
+* Change: Develop
+  [iugin]
+
+
 ## [6.0.11-16](https://github.com/eea/eea-website-backend/releases/tag/6.0.11-16) - 2024-08-24T00:09:45Z
 
 ### Plone

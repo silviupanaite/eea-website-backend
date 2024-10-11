@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.13-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-3) - 2024-10-11T23:15:06Z
+
+### Internal
+
+- chore: Upgrade develop environment to Plone 6.0.13 - [alin -  [`cd07f3b`](https://github.com/eea/eea-website-backend/commit/cd07f3b2a1323bb59f0ca8948ec116eb9346c1c7)]
+
 ## [6.0.13-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-2) - 2024-10-09T23:47:29Z
 
 ### Plone

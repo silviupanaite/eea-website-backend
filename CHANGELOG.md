@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [6.0.13-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-10) - 2024-11-07T00:49:29Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-6 ~ 6.0.13-7 
+
+##### eeacms/plone-backend:[6.0.13-7](https://github.com/eea/plone-backend/releases/tag/6.0.13-7)
+###### Internal
+
+- Release plone.restapi 9.8.4 - refs #278606 - [alin - [`7eb5569`](https://github.com/eea/plone-backend/commit/7eb55697078203fb71c544497095a371bc9b4591)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.8 ~ 9.9
+
+* Bug fix: SearchableText for ims_indicator to include tags 
+  [avoinea - refs #279540]
+
+
 ## [6.0.13-9](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-9) - 2024-11-01T00:46:43Z
 
 ### Plone

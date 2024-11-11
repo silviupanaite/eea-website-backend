@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.13-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-11) - 2024-11-11T20:08:05Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 9.9 ~ 10.1
+
+* Bug fix: Indicator new version should not create .2, .3 copies it should always point to .1 version if it exists
+  [avoinea - refs #279130]
+
+* Bug fix: Add serializer IndicatorObjectPrimaryFieldTarget to resolve links to marked_for_deletion indicators
+  [avoinea - refs #280157]
+
+### Internal
+
+- Release eea.dexterity.indicators 10.1 - [alin -  [`debe7c1`](https://github.com/eea/eea-website-backend/commit/debe7c1c867545270ff1bda629de8cbd1c33a961)]
+
 ## [6.0.13-10](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-10) - 2024-11-07T00:49:29Z
 
 ### Plone

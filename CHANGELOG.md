@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.13-12](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-12) - 2024-11-14T00:48:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-7 ~ 6.0.13-8 
+
+##### eeacms/plone-backend:[6.0.13-8](https://github.com/eea/plone-backend/releases/tag/6.0.13-8)
+###### Dependency updates
+
+###### [pas.plugins.ldap](https://pypi.org/project/pas.plugins.ldap/#changelog): 1.8.3.dev3 ~ 1.8.3
+
+###### Internal
+
+- Release pas.plugins.ldap 1.8.3 - [Alin Voinea - [`2abae20`](https://github.com/eea/plone-backend/commit/2abae20c9f7d6883f84d39e8bf87b01cf91d1401)]
+
+
 ## [6.0.13-11](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-11) - 2024-11-11T20:08:05Z
 
 ### Dependency updates

@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.13-17](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-17) - 2024-12-18T15:37:26Z
+
+### Dependency updates
+
+#### New packages
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions): 1.0
+
+### Internal
+
+- feat: Add eea.api.versions - refs #280462 - [David Ichim -  [`3331836`](https://github.com/eea/eea-website-backend/commit/333183644f621dc9722234b5cb34231e05fb641a)]
+
 ## [6.0.13-16](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-16) - 2024-12-12T00:48:59Z
 
 ### Plone

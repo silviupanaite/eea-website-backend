@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.13-18](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-18) - 2024-12-19T14:01:03Z
+
+### Dependency updates
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions/releases): 1.0 ~ 1.1
+
+* Removed print statement
+  [ichim-david refs #280462]
+
+
 ## [6.0.13-17](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-17) - 2024-12-18T15:37:26Z
 
 ### Dependency updates

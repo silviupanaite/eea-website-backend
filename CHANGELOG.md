@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [6.0.13-21](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-21) - 2025-02-04T16:40:12Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-12 ~ 6.0.13-14 
+
+##### eeacms/plone-backend:[6.0.13-14](https://github.com/eea/plone-backend/releases/tag/6.0.13-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 6.3 ~ 6.4
+
+* Fix: HTML, Slate serializer for resolveuid images
+ [avoinea - refs #282435]
+##### eeacms/plone-backend:[6.0.13-13](https://github.com/eea/plone-backend/releases/tag/6.0.13-13)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 6.2 ~ 6.3
+
+* Fix: Context Navigation root_path extract from root_node
+ [avoinea - refs #283961]
+* Change: Fix Serializer HTML
+ [dobri1408 - refs #282435]
+
+
 ## [6.0.13-20](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-20) - 2025-02-04T00:16:35Z
 
 ### Dependency updates

@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [6.0.13-22](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-22) - 2025-02-14T14:41:47Z
+
+### Internal
+
+- feat: Add plone.volto with fix for remote_url within nav (#5)
+
+* feat: Add plone.volto with fix for remote_url within nav
+
+* change: Update plone.volto branch to remote_url_nav_fix_4
+
+The plone.volto branch was updated in develop/sources.ini to point to the `remote_url_nav_fix_4` branch. This is because `remote_url_nav_fix` branch is from release 5 and
+we are still on 4
+
+* Install custom plone.volto 4.4.5.dev1 version
+
+* Add comment about custom plone.volto version
+
+---------
+
+Co-authored-by: alin <contact@avoinea.com> - [David Ichim -  [`b01d547`](https://github.com/eea/eea-website-backend/commit/b01d547419c108abd4b14123c989e6f117a59eb7)]
+
 ## [6.0.13-21](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-21) - 2025-02-04T16:40:12Z
 
 ### Plone

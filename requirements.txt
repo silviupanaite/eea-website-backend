@@ -7,4 +7,5 @@ eea.website.policy
 eea.stringinterp
 eea.api.dataconnector
 eea.api.versions
+eea.plotly
 Products.CMFEditions

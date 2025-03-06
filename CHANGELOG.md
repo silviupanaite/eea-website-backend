@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.13-25](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-25) - 2025-03-06T00:18:17Z
+
+### Dependency updates
+
+#### New packages
+
+##### [eea.plotly](https://github.com/eea/eea.plotly): 1.1
+
+### Internal
+
+- Release eea.plotly 1.1 - [alin -  [`26c3f37`](https://github.com/eea/eea-website-backend/commit/26c3f37acd9da480e3be2eeadd6b9786ed584a4f)]
+
 ## [6.0.13-24](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-24) - 2025-02-28T16:25:41Z
 
 ### Plone

@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.13-26](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-26) - 2025-03-07T00:16:23Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 11.4 ~ 11.5
+
+* Change: Don't remove embed_content block data
+  [razvanMiu]
+
+
 ## [6.0.13-25](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-25) - 2025-03-06T00:18:17Z
 
 ### Dependency updates

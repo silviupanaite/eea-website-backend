@@ -70,6 +70,7 @@ install:		## Install Plone and develop add-ons
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev
 	bin/pip install -r ../requirements.txt -c ../constraints.txt
+	bin/pip install plone.autoinclude==2.0.0
 	bin/mxdev -c sources.ini
 	bin/pip install -r requirements-mxdev.txt
 
